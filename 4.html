@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #jinbi{
+            width:60px;
+            height:60px;
+            background:gold;
+            border-radius:50%;
+            text-align:center;
+            line-height: 60px;
+            font-size:30px;
+            font-weight:bold;
+            position:absolute;
+            left:10px;
+            top:100px;
+        }
+        #jinbi-1{
+            width:80px;
+            height:80px;
+            background:red;
+            border-radius:50%;
+            text-align:center;
+            line-height: 80px;
+            font-size:50px;
+            font-weight:bold;
+            position:absolute;
+            left:94px;
+            top:100px;
+            transform:rotate(21deg);
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div id="jinbi">
+        ¥
+    </div>
+    <!-- 另外两个金币，先隐藏 -->
+    <div id="jinbi-1">¥</div>
+    <script src="./static/js/jquery-1.7.2.min.js"></script>
+    <script>
+        $(function(){
+
+            var widthNum = $("#jinbi").width();//金币宽度
+            var heightNum = $("#jinbi").height();//金币高度
+            var leftNum = 10;//left值
+            var topNum = 100;//top值
+            var rotateNum = 0;//旋转角度
+            function change(){
+
+
+                //判断
+                if(widthNum == 80){
+                    //显示备用金币
+                    $("#jinbi-1").css("display","block");
+
+                }
+                if(widthNum == 130){
+                    clearInterval(countTime);
+                }
+                widthNum ++;
+                heightNum ++;
+                fontNum  = widthNum/2;
+                leftNum +=4;
+                //保证圆心在同一水平线
+                
+                topNum = 100-(heightNum - 60)/2; 
+
+                rotateNum ++;
+
+                $('#jinbi').css({
+                    "width":widthNum+"px",
+                    "height":heightNum+"px",
+                    "font-size":fontNum+"px",
+                    "line-height":widthNum+"px",
+                    "left":leftNum + "px",
+                    "top":topNum +"px",
+                    "transform":"rotate("+ rotateNum +"deg)"
+                });
+            }
+            // change();
+            var countTime = setInterval(function(){
+                change();
+
+            },50)
+        })
+    </script>    
+</body>
+</html>

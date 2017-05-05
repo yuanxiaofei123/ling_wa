@@ -1,0 +1,862 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>便利店测试</title>
+    <meta name="baidu-site-verification" content="4vNEpUr1Eg" />
+    <meta name="keywords" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <meta name="description" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="grey"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="./static/css/lingwa.css" media="all">
+    <link href="" rel="apple-touch-icon-precomposed">
+    <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./static/js/rem.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.lazyload.js"></script>
+
+</head>
+<body style="background:#fff;">
+    <div class="push_content">
+        <div class="search">
+        <form  name="itemForm" id="form" action="" method="get">
+            <input type="text" name="itemName" placeholder="请输入商品名" id="sec">
+            <input type="hidden" name="shopid" value="">
+            <input type="submit" style="display:none">
+            <span class="cl" id="cl">x</span>
+        </form>
+            <a href="www.baidu.com" class="cancel" style="display:none;color:#000;" id="cancel" >取消</a>
+        </div>
+        <ul style="margin-bottom:.8rem;">
+            <li id="1">
+            <div style="float:left;width:80%;" class="dianji">
+                <img data-original="static/images/hou.jpg" class="oh" src="static/images/blank.png">
+                <div class="new_show">
+                    <p class="shop_name">红牛1</p>
+                    <p style="padding-left: 0.18rem;">
+                        <span class="shop_money">￥<span>6.00</span></span>
+                        <span class="price_01">采购价</span>
+                        <span class="price_02">￥<span>3.00</span></span>
+                        <span class="price_01">售价</span>
+                        <span class="price_02">￥<span>2.00</span></span>
+                    </p>
+                    <p class="spec">422ml/听</p>
+                </div>
+            </div>
+                
+                <div class="push_right">
+                    <p class="num">1</p>
+                    <a href="javascript:" class="off" id="17">
+                        上架
+                    </a>
+                </div>
+                
+                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+                    <div class="liebiao">
+                        <img src="static/images/hong.jpg" >
+                        <div class="shuzi">
+                            <p class="shop_name"></p>
+                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                                    <span class="shop_money">￥<span>1</span></span>
+                                    <span class="price_01">采购价</span>
+                                    <span class="ye">￥<span>1</span></span>
+                            </p>
+                            <p class="spec"></p>
+                        </div>
+                        <span class="quxiao" id="close"  >
+                            x
+                        </span>
+                    </div>
+                    <div class="shuru1">
+                        <span>售价：</span>
+                        <input type="" name="cost" value="" class="ss">
+                    </div>
+                    <div class="shuru1">
+                        <span>数量：</span>
+                        <input type="" name="number" value="" class="ss1">
+                    </div>
+                    <div class="butt" data-id="17">
+                        <a href="javascript:" class="save">保存</a>
+                        <a href="javascript:" class="push">上架</a>
+                    </div>
+                
+                </div>
+            </li>
+            <li id="3">
+                <div style="float:left;width:80%;" class="dianji">
+                    <img data-original="static/images/hou.jpg" class="oh">
+                    <div class="new_show">
+                        <p class="shop_name">红牛1</p>
+                        <p style="padding-left: 0.18rem;">
+                            <span class="shop_money">￥<span>6.00</span></span>
+                            <span class="price_01">采购价</span>
+                            <span class="price_02">￥<span>3.00</span></span>
+                            <span class="price_01">售价</span>
+                            <span class="price_02">￥<span>2.00</span></span>
+                        </p>
+                        <p class="spec">422ml/听</p>
+                    </div>
+                </div>
+                <div class="push_right">
+                    <p class="num">98</p>
+                    <a href="javascript:" class="off">
+                        上架
+                    </a>
+                </div>
+                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+                    <div class="liebiao">
+                        <img src="static/images/hong.jpg">
+                        <div class="shuzi">
+                            <p class="shop_name"></p>
+                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                                    <span class="shop_money">￥<span>2</span></span>
+                                    <span class="price_01">采购价</span>
+                                    <span class="ye">￥<span>2</span></span>
+                            </p>
+                            <p class="spec"></p>
+                        </div>
+                        <span class="quxiao" id="close"  >
+                            x
+                        </span>
+                    </div>
+                    <div class="shuru1">
+                        <span>售价：</span>
+                        <input type="" name="cost" value="" >
+                    </div>
+                    <div class="shuru1">
+                        <span>数量：</span>
+                        <input type="" name="number" value="" >
+                    </div>
+                    <div class="butt">
+                        <a href="javascript:" class="save">保存</a>
+                        <a href="javascript:" class="push">上架</a>
+                    </div>
+                
+                </div>
+
+            </li>
+            <li>
+                <div style="float:left;width:80%;" class="dianji">
+                    <img data-original="static/images/hou.jpg" class="oh">
+                    <div class="new_show">
+                        <p class="shop_name">红牛1</p>
+                        <p style="padding-left: 0.18rem;">
+                            <span class="shop_money">￥<span>6.00</span></span>
+                            <span class="price_01">采购价</span>
+                            <span class="price_02">￥<span>3.00</span></span>
+                            <span class="price_01">售价</span>
+                            <span class="price_02">￥<span>2.00</span></span>
+                        </p>
+                        <p class="spec">422ml/听</p>
+                    </div>
+                </div>
+                <div class="push_right">
+                    <p class="num">98</p>
+                    <a href="javascript:" class="off">
+                        上架
+                    </a>
+                </div>
+                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+                    <div class="liebiao">
+                        <img src="static/images/hong.jpg">
+                        <div class="shuzi">
+                            <p class="shop_name"></p>
+                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                                    <span class="shop_money">￥<span></span></span>
+                                    <span class="price_01">采购价</span>
+                                    <span class="ye">￥<span></span></span>
+                            </p>
+                            <p class="spec"></p>
+                        </div>
+                        <span class="quxiao" id="close" >
+                            x
+                        </span>
+                    </div>
+                    <div class="shuru1">
+                        <span>售价：</span>
+                        <input type="" name="cost" value="" >
+                    </div>
+                    <div class="shuru1">
+                        <span>数量：</span>
+                        <input type="" name="number" value="">
+                    </div>
+                    <div class="butt">
+                        <a href="javascript:" class="save">保存</a>
+                        <a href="javascript:" class="push">上架</a>
+                    </div>
+                
+                </div>
+            </li>
+            <li>
+                <div style="float:left;width:80%;" class="dianji">
+                    <img data-original="static/images/hou.jpg" class="oh">
+                    <div class="new_show">
+                        <p class="shop_name">红牛1</p>
+                        <p style="padding-left: 0.18rem;">
+                            <span class="shop_money">￥<span>6.00</span></span>
+                            <span class="price_01">采购价</span>
+                            <span class="price_02">￥<span>3.00</span></span>
+                            <span class="price_01">售价</span>
+                            <span class="price_02">￥<span>2.00</span></span>
+                        </p>
+                        <p class="spec">422ml/听</p>
+                    </div>
+                </div>
+                <div class="push_right">
+                    <p class="num">98</p>
+                    <a href="javascript:" class="off">
+                        上架
+                    </a>
+                </div>
+                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+                    <div class="liebiao">
+                        <img src="static/images/hong.jpg">
+                        <div class="shuzi">
+                            <p class="shop_name"></p>
+                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                                    <span class="shop_money">￥<span></span></span>
+                                    <span class="price_01">采购价</span>
+                                    <span class="ye">￥<span></span></span>
+                            </p>
+                            <p class="spec"></p>
+                        </div>
+                        <span class="quxiao" id="close" >
+                            x
+                        </span>
+                    </div>
+                    <div class="shuru1">
+                        <span>售价：</span>
+                        <input type="" name="cost" value="">
+                    </div>
+                    <div class="shuru1">
+                        <span>数量：</span>
+                        <input type="" name="number" value="">
+                    </div>
+                    <div class="butt">
+                        <a href="javascript:" class="save">保存</a>
+                        <a href="javascript:" class="push">上架</a>
+                    </div>
+                
+                </div>
+            </li>
+            <li>
+                <div style="float:left;width:80%;" class="dianji">
+                    <img data-original="static/images/hou.jpg" class="oh">
+                    <div class="new_show">
+                        <p class="shop_name">红牛1</p>
+                        <p style="padding-left: 0.18rem;">
+                            <span class="shop_money">￥<span>6.00</span></span>
+                            <span class="price_01">采购价</span>
+                            <span class="price_02">￥<span>3.00</span></span>
+                            <span class="price_01">售价</span>
+                            <span class="price_02">￥<span>2.00</span></span>
+                        </p>
+                        <p class="spec">422ml/听</p>
+                    </div>
+                </div>
+                <div class="push_right">
+                    <p class="num">98</p>
+                    <a href="javascript:" class="off">
+                        上架
+                    </a>
+                </div>
+                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+                    <div class="liebiao">
+                        <img src="static/images/hong.jpg">
+                        <div class="shuzi">
+                            <p class="shop_name"></p>
+                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                                    <span class="shop_money">￥<span></span></span>
+                                    <span class="price_01">采购价</span>
+                                    <span class="ye">￥<span></span></span>
+                            </p>
+                            <p class="spec"></p>
+                        </div>
+                        <span class="quxiao" id="close" >
+                            x
+                        </span>
+                    </div>
+                    <div class="shuru1">
+                        <span>售价：</span>
+                        <input type="" name="cost" value="">
+                    </div>
+                    <div class="shuru1">
+                        <span>数量：</span>
+                        <input type="" name="number" value="">
+                    </div>
+                    <div class="butt">
+                        <a href="javascript:" class="save">保存</a>
+                        <a href="javascript:" class="push">上架</a>
+                    </div>
+                
+                </div>
+            </li>
+            <li>
+                <div style="float:left;width:80%;" class="dianji">
+                    <img data-original="static/images/hou.jpg" class="oh">
+                    <div class="new_show">
+                        <p class="shop_name">红牛1</p>
+                        <p style="padding-left: 0.18rem;">
+                            <span class="shop_money">￥<span>6.00</span></span>
+                            <span class="price_01">采购价</span>
+                            <span class="price_02">￥<span>3.00</span></span>
+                            <span class="price_01">售价</span>
+                            <span class="price_02">￥<span>2.00</span></span>
+                        </p>
+                        <p class="spec">422ml/听</p>
+                    </div>
+                </div>
+                <div class="push_right">
+                    <p class="num">98</p>
+                    <a href="javascript:" class="off">
+                        上架
+                    </a>
+                </div>
+                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+                    <div class="liebiao">
+                        <img src="static/images/hong.jpg">
+                        <div class="shuzi">
+                            <p class="shop_name"></p>
+                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                                    <span class="shop_money">￥<span></span></span>
+                                    <span class="price_01">采购价</span>
+                                    <span class="ye">￥<span></span></span>
+                            </p>
+                            <p class="spec"></p>
+                        </div>
+                        <span class="quxiao" id="close" >
+                            x
+                        </span>
+                    </div>
+                    <div class="shuru1">
+                        <span>售价：</span>
+                        <input type="" name="cost" value="">
+                    </div>
+                    <div class="shuru1">
+                        <span>数量：</span>
+                        <input type="" name="number" value="">
+                    </div>
+                    <div class="butt">
+                        <a href="javascript:" class="save">保存</a>
+                        <a href="javascript:" class="push">上架</a>
+                    </div>
+                
+                </div>
+            </li>
+            <li>
+                <div style="float:left;width:80%;" class="dianji">
+                    <img data-original="static/images/hou.jpg" class="oh">
+                    <div class="new_show">
+                        <p class="shop_name">红牛1</p>
+                        <p style="padding-left: 0.18rem;">
+                            <span class="shop_money">￥<span>6.00</span></span>
+                            <span class="price_01">采购价</span>
+                            <span class="price_02">￥<span>3.00</span></span>
+                            <span class="price_01">售价</span>
+                            <span class="price_02">￥<span>2.00</span></span>
+                        </p>
+                        <p class="spec">422ml/听</p>
+                    </div>
+                </div>
+                <div class="push_right">
+                    <p class="num">98</p>
+                    <a href="javascript:" class="off">
+                        上架
+                    </a>
+                </div>
+                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+                    <div class="liebiao">
+                        <img src="static/images/hong.jpg">
+                        <div class="shuzi">
+                            <p class="shop_name"></p>
+                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                                    <span class="shop_money">￥<span></span></span>
+                                    <span class="price_01">采购价</span>
+                                    <span class="ye">￥<span></span></span>
+                            </p>
+                            <p class="spec"></p>
+                        </div>
+                        <span class="quxiao" id="close" >
+                            x
+                        </span>
+                    </div>
+                    <div class="shuru1">
+                        <span>售价：</span>
+                        <input type="" name="cost" value="">
+                    </div>
+                    <div class="shuru1">
+                        <span>数量：</span>
+                        <input type="" name="number" value="">
+                    </div>
+                    <div class="butt">
+                        <a href="javascript:" class="save">保存</a>
+                        <a href="javascript:" class="push">上架</a>
+                    </div>
+                
+                </div>
+            </li>
+        </ul> 
+        <!-- <span style="display:block;margin-top:1rem;text-align:center;font-size:0.36rem;letter-spacing: 1px;">无商品</span>  -->
+        <p class="s"  id="load" style="display:none;">正在加载更多.....</p>
+    </div>
+    <div class="push_bg" id="push_bg" style="display:none"></div>
+</body>
+<script type="text/javascript" src="./static/js/jquery.lazyload.js"></script>
+<script type="text/javascript">
+function formatMoney(num) {
+        var money = num/100;
+        var float = num%100;
+        if(float == 0){
+            money = money + ".00";
+        }
+        return money;
+    }
+ var hasNextPage = true;
+ window.onscroll = function(){  
+    if (Math.abs($(document).scrollTop() >= $(document).height()-$(window).height())) { if(!hasNextPage){
+                return;
+            }     
+        $("#load").css("display","block");
+        //document.body.scrollTop = document.body.scrollHeight;
+        // if (document.body.scrollTop = document.body.scrollHeight) {
+        //     return false;
+        // }
+    var push_data =  {
+    "status": 200,
+    "msg": "OK",
+    "data": {
+        "pageNum": 1,
+        "pageSize": 50,
+        "size": 13,
+        "startRow": 1,
+        "endRow": 13,
+        "total": 13,
+        "pages": 1,
+        "list": [
+            {
+                "id": 1,
+                "name": "EGO小鱼多多小鱼饼干（海苔味）10.4g",
+                "imgPath": "http://assets.lingwa.com.cn/images/item/59c28170-8e55-4d3e-8175-c6e6fc94eb3b.jpg",
+                "sourcingPrice": 110,
+                "marketPrice": 0,
+                "salePrice": 110,
+                "size": "10.4g/包",
+                "num": 2,
+                "itemId": 643,
+                "shopId": 741,
+                "status": 1,
+                "isdown": 1
+            },
+            {
+                "id": 4,
+                "name": "高乐高脆力棒27克",
+                "imgPath": "http://assets.lingwa.com.cn/images/item/76724966-ec4f-4770-a396-0676564a725e.jpg",
+                "sourcingPrice": 150,
+                "marketPrice": 160,
+                "salePrice": 250,
+                "size": "27克/个",
+                "num": 2,
+                "itemId": 799,
+                "shopId": 741,
+                "status": 1,
+                "isdown": 1
+            },
+            {
+                "id": 6,
+                "name": "美客多甘栗仁23g",
+                "imgPath": "http://assets.lingwa.com.cn/images/item/da26c55c-7f2a-47d8-9bd8-1ee32491b9df.jpg",
+                "sourcingPrice": 120,
+                "marketPrice": 140,
+                "salePrice": 120,
+                "size": "包",
+                "num": 100,
+                "itemId": 261,
+                "shopId": 741,
+                "status": 1,
+                "isdown": 1
+            },
+            {
+                "id": 7,
+                "name": "宏泰记加应子10.5g",
+                "imgPath": "http://assets.lingwa.com.cn/images/item/774fb548-f2be-46b6-b600-4950d6f89ff8.jpg",
+                "sourcingPrice": 34,
+                "marketPrice": 50,
+                "salePrice": 34,
+                "size": "包",
+                "num": 50,
+                "itemId": 644,
+                "shopId": 741,
+                "status": 1,
+                "isdown": 1
+            },
+            {
+                "id": 8,
+                "name": "ZEK韩国进口海苔4g",
+                "imgPath": "http://assets.lingwa.com.cn/images/item/0add44f8-7cda-41ed-8bb4-93048442cf9d.jpg",
+                "sourcingPrice": 280,
+                "marketPrice": 300,
+                "salePrice": 280,
+                "size": "1",
+                "num": 100,
+                "itemId": 416,
+                "shopId": 741,
+                "status": 1,
+                "isdown": 1
+            },
+            {
+                "id": 9,
+                "name": "啃馋你烤小鸡腿38g",
+                "imgPath": "http://assets.lingwa.com.cn/images/item/114ccff6-5438-45e1-ab8a-608ba2c7e0b3.jpg",
+                "sourcingPrice": 230,
+                "marketPrice": 250,
+                "salePrice": 230,
+                "size": "38g/包",
+                "num": 100,
+                "itemId": 442,
+                "shopId": 741,
+                "status": 1,
+                "isdown": 1
+            },
+            {
+                "id": 10,
+                "name": "红灯记鱼骨豆32g",
+                "imgPath": "http://assets.lingwa.com.cn/images/item/7a79ad12-8dcf-4b00-93f0-9a87f2eddac8.jpg",
+                "sourcingPrice": 180,
+                "marketPrice": 200,
+                "salePrice": 180,
+                "size": "包",
+                "num": 100,
+                "itemId": 411,
+                "shopId": 741,
+                "status": 1,
+                "isdown": 1
+            },
+            {
+                "id": 12,
+                "name": "滋尚胡婆婆鸡蛋干",
+                "imgPath": "http://assets.lingwa.com.cn/images/item/6f798b2c-4970-4840-80d9-45f5a353bda2.jpg",
+                "sourcingPrice": 88,
+                "marketPrice": 100,
+                "salePrice": 80,
+                "size": "包",
+                "num": 20,
+                "itemId": 521,
+                "shopId": 741,
+                "status": 1,
+                "isdown": 1
+            },
+            {
+                "id": 13,
+                "name": "我不吹牛牛肉干14g",
+                "imgPath": "http://assets.lingwa.com.cn/images/item/b61f3393-b098-4460-bf2c-e4face5bb92a.jpg",
+                "sourcingPrice": 840,
+                "marketPrice": 900,
+                "salePrice": 840,
+                "size": "6个/袋",
+                "num": 20,
+                "itemId": 215,
+                "shopId": 741,
+                "status": 1,
+                "isdown": 1
+            },
+            {
+                "id": 13,
+                "name": "我不吹牛牛肉干14g",
+                "imgPath": "http://assets.lingwa.com.cn/images/item/b61f3393-b098-4460-bf2c-e4face5bb92a.jpg",
+                "sourcingPrice": 840,
+                "marketPrice": 900,
+                "salePrice": 840,
+                "size": "6个/袋",
+                "num": 20,
+                "itemId": 215,
+                "shopId": 741,
+                "status": 1,
+                "isdown": 1
+            },
+            {
+                "id": 13,
+                "name": "我不吹牛牛肉干14g",
+                "imgPath": "http://assets.lingwa.com.cn/images/item/b61f3393-b098-4460-bf2c-e4face5bb92a.jpg",
+                "sourcingPrice": 840,
+                "marketPrice": 900,
+                "salePrice": 840,
+                "size": "6个/袋",
+                "num": 20,
+                "itemId": 215,
+                "shopId": 741,
+                "status": 1,
+                "isdown": 1
+            }
+        ],
+        "firstPage": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "lastPage": 1,
+        "isFirstPage": true,
+        "isLastPage": true,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 8,
+        "navigatepageNums": [
+            1
+        ]
+    }
+}
+    var list = push_data.data.list;
+        for (var i = 0; i < list.length; i++) {
+            var html="";
+            var itemId = list[i].itemId;
+            var imgPath = list[i].imgPath;
+            var name = list[i].name;
+            var sourcingPrice = formatMoney(list[i].sourcingPrice);
+            var marketPrice = formatMoney(list[i].marketPrice);
+            var salePrice = formatMoney(list[i].salePrice);
+            var size = list[i].size;
+            var num = list[i].num;
+            html += '<li><div style="float:left;width:80%;" class="dianji"><img  data-original="'+imgPath+'" class="oh" src="static/images/blank.png"><div class="new_show"><p class="shop_name">'+ name+'</p><p style="padding-left: 0.18rem;"><span class="shop_money">￥<span>'+sourcingPrice+'</span></span><span class="price_01">采购价</span> <span class="price_02">￥<span>'+marketPrice+'</span></span><span class="price_01">售价</span><span class="price_02">￥<span>'+salePrice+'</span></span></p><p class="spec">'+size+'</p></div></div><div class="push_right"><p class="num">'+num+'</p><a href="javascript:" class="off">上架</a></div><div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;"><div class="liebiao"><img src=""><div class="shuzi"><p class="shop_name"></p><p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;"><span class="shop_money">￥<span></span></span><span class="price_01">采购价</span><span class="ye">￥<span></span></span></p> <p class="spec"></p></div><span class="quxiao" id="close">x</span></div><div class="shuru1"><span>售价：</span><input type="" name="cost" value=""></div><div class="shuru1"><span>数量：</span><input type="" name="number" value=""></div><div class="butt"><a href="javascript:" class="save">保存</a><a href="javascript:" class="push">上架</a></div></div></li>';
+            $("ul").append(html);
+        }
+        $("img.oh").lazyload({ threshold :180});
+        $("#load").css("display","none");
+    }
+ }
+
+
+var touchmove;
+$(document).on( "touchend", function() {
+  touchmove = false;
+    });
+  $(document).on( "touchmove", function() {
+  touchmove = true;
+    });
+ $("ul").on("touchend",function(e){
+
+    if (touchmove) {
+        return;
+    }
+
+         // e.target是被点击的元素!
+         var s = e.target; 
+         console.log(s);
+         if (s.className=='off') {
+        return;
+    }
+         if (s.nodeName == "A" && s.className == "off") {
+            var id = $(s).attr("id");
+            if (confirm("确定上架吗？")){
+            $(e.target).parent().parent().fadeOut(1000, function(){
+                    $(e.target).parent().parent().remove();
+                });
+            }
+            return;
+        }
+        //关闭
+        if (s.className == "quxiao") {
+            $('input').blur();
+            $(s).parent().parent().animate({bottom:"-5.62rem"},200);
+            $(s).parent().parent().parent().parent().parent().siblings(".push_bg").fadeOut();
+            return;
+        }
+        //保存w
+        if (s.className == "save") {
+            if (s.className == 'push_bottom') {
+                    return;
+                }
+                $('input').blur();
+            var data_id = $(s).parent().attr("data-id");
+            var price_sale = $(s).parent().siblings(".shuru1").eq(0).find("input").val();
+            var num_stock = $(s).parent().siblings(".shuru1").eq(1).find("input").val();
+            var reg = /^(([1-9]+)|([0-9]+\.[0-9]{1,2}))$/;
+            var price = 0;
+            if(reg.test(price_sale)){
+                price = price_sale*100;
+            }else{
+                alert("请输入正确的价格");
+                return false;
+            }    
+            var tt=/^\d+$/;
+            if (!tt.test(num_stock)) {
+                alert("请输入正确的数量");
+                return false;
+            }
+            $(s).parent().parent().siblings(".dianji").find(".new_show p .price_02 span").eq(1).text(price_sale);
+            $(s).parent().parent().siblings(".push_right").find(".num").text(num_stock);
+            $(s).parent().parent().animate({bottom:"-5.62rem"},200);
+            $(s).parent().parent().parent().parent().parent().siblings(".push_bg").fadeOut();
+            return;
+        }
+        //悬浮层上架
+        if(s.className == "push"){
+            if (confirm('确定上架吗？')) {
+            var data_id = $(s).parent().attr("data-id");
+            var the = $(s).parent();
+            var num_stock = parseInt($(s).parent().siblings(".shuru1").eq(1).find("input").val());
+            var no = parseInt($(s).parent().parent().siblings(".push_right").find(".num").text());
+            var sup = no - num_stock;
+            $(s).parent().parent().siblings(".push_right").find(".num").text(sup);
+            if (sup == 0) {
+                $(the).parent().parent().fadeOut(1000, function(){
+                     $(s).remove();
+                });
+            }    
+            $(the).parent().parent().parent().parent().siblings(".push_bg").fadeOut();
+            $(the).parent().animate({bottom:"-5.62rem"},200);
+            return;
+        }
+        }
+
+        if (s.className == 'push_bottom') {
+                    return;
+                }
+        if (s.tagName =="LI") 
+            return;
+            while(s.tagName != "LI") {
+                s = s.parentNode;
+                $(s).find(".push_bottom").animate({bottom:"0"},150);
+                $(s).parent().parent().parent().siblings(".push_bg").css("display","block");
+                var name = $(s).find(".dianji .new_show .shop_name").text();
+                $(s).find(".push_bottom .liebiao .shuzi .shop_name").text(name);
+                var img_src = $(s).find(".dianji img").attr("src");
+                $(s).find(".push_bottom .liebiao img").attr("src",img_src);
+                var shop_price = $(s).find(".dianji .new_show p .shop_money span").text();
+                $(s).find(".push_bottom .liebiao .shuzi p .shop_money span").text(shop_price);
+                var cosl_price = $(s).find(".dianji .new_show p .price_02 span").eq(0).text();
+                $(s).find(".push_bottom .liebiao .shuzi p .ye span").text(cosl_price);
+                var cost_price = $(s).find(".dianji .new_show p .price_02 span").eq(1).text();
+                $(s).find(".push_bottom .shuru1").eq(0).find("input").val(cost_price);
+                var num = $(s).find(".push_right .num").text();
+                $(s).find(".push_bottom .shuru1").eq(1).find("input").val(num); 
+                if (s.className == 'push_bottom') {
+                    return;
+                }    
+            }
+});
+$(document).on('touchend','.off',(function(){
+    if (touchmove) {
+        return;
+    }
+            var id = $(this).attr("id");
+            if (confirm("确定上架吗？")){
+            $(this).parent().parent().fadeOut(500, function(){
+                    $(this).remove();
+                });
+            }
+            return; 
+}))
+
+    $("#sec").keyup(function(){
+        var a = $(this).val();
+        if (a.length>0) {
+                $("#cl").css("visibility","visible");
+            }else{
+                $("#cl").css("visibility","hidden")
+            }
+        $("#cl").click(function(){
+            $("#sec").val("");
+            $("#cl").css("visibility","hidden");
+        });  
+    });
+
+    // 点击 取消按钮出现
+    $('input[name="itemName"]').on("touchend",function() {
+        $('input[name="itemName"]').css("width","69%");
+        $("#cancel").show();
+        $('input[name="itemName"]').focus();
+    });
+    $("#cancel").on("touchend",function(event) {
+        event.stopPropagation();
+        $('input[name="itemName"]').css("width","87%");
+        $('input[name="itemName"]').val("");
+        $("#cl").css("visibility","hidden");
+        $("#cancel").hide();
+
+    });
+  //   $(".dianji").click(function(){
+  //   var a = this;
+  //   var name =$(a).find(".shop_name").text();
+  //   var shop_price =  $(a).find("p .shop_money span").text();
+  //   var img_src = $(a).parent().find("img").attr("src");
+  //   var caigou_price = $(a).find("p .price_02 span").eq(0).text();
+  //   var cost_price = $(a).find("p .price_02 span").eq(1).text();
+  //   var spec = $(a).find(".spec").text();
+  //   var su = $(a).parent();
+  //   var shuliang = $(su).find(".push_right .num").text();
+  //   $(a).siblings(".push_bottom").animate({bottom:"0"},200);
+  //   $(su).parent().parent().siblings(".push_bg").css("display","block");
+  //   var sus_name = $(a).siblings(".push_bottom").children(".liebiao");
+  //   $(sus_name).find("img").attr("src",img_src);
+  //   $(sus_name).find(".shuzi .shop_name").text(name);
+  //   $(sus_name).find(".shuzi p .shop_money span").text(shop_price);
+  //   $(sus_name).find(".shuzi p .ye span").text(caigou_price);
+  //   $(sus_name).find(".shuzi .spec").text(spec);
+  //   var biaojia = $(a).siblings(".push_bottom").children(".shuru1");
+  //   $(biaojia).eq(0).find("input").val(cost_price);
+  //   $(biaojia).eq(1).find("input").val(shuliang);
+  // });
+  //   // close关闭悬浮层
+  //       $(".quxiao").on("touchend",function(){
+  //        $(this).parent().parent().animate({bottom:"-5.62rem"},200);
+  //        $(this).parent().parent().parent().parent().parent().siblings(".push_bg").css("display","none");
+  //       });
+    
+
+  //   //保存数据按钮
+  //   $(".save").click(function(){
+  //     var price_sale = $(this).parent().siblings(".shuru1").eq(0).find("input").val();
+  //      var num_stock = $(this).parent().siblings(".shuru1").eq(1).find("input").val();
+  //      var reg = /^(([1-9]+)|([0-9]+\.[0-9]{1,2}))$/;
+  //      var price = 0;
+  //      if(reg.test(price_sale)){
+  //           price = price_sale*100;
+  //      }else{
+  //           alert("请输入正确的价格");
+  //           return false;
+  //      }    
+  //      var tt=/^\d+$/;
+  //      if (!tt.test(num_stock)) {
+  //           alert("请输入正确的数量");
+  //           return false;
+  //      }
+  //      $(this).parent().parent().siblings(".dianji").find(".new_show p .price_02 span").eq(1).text(price_sale);
+  //      $(this).parent().parent().siblings(".push_right").find(".num").text(num_stock);     
+  //      $(this).parent().parent().animate({bottom:"-5.62rem"},200);
+  //      $(this).parent().parent().parent().parent().parent().siblings(".push_bg").fadeOut();    
+  //   });
+
+  //   //上架
+  //   $(".off").click(function(){
+  //       if (confirm("确定下架吗？")){
+  //           var the = this;
+  //           $(this).parent().parent().fadeOut(1000, function(){
+  //                   $(this).remove();
+  //               });
+  //       }
+        
+  //   });
+  //   //悬浮层上架
+  //   $(".push").click(function(){
+  //           var sdsd = this;
+  //       $(sdsd).parent().parent().parent().parent().parent().siblings(".push_bg").fadeOut();
+  //       $(sdsd).parent().parent().animate({bottom:"-5.62rem"},200);
+  //       var nu = parseInt($(this).parent().siblings(".shuru1").eq(1).find("input").val());
+  //       var no = parseInt($(this).parent().parent().siblings(".push_right").find(".num").text());
+  //       var sup = no - nu;
+  //       $(this).parent().parent().siblings(".push_right").find(".num").text(sup);
+  //       if (sup == 0) {
+  //              $(this).parent().parent().parent().fadeOut(1000, function(){
+  //                   $(this).remove();
+  //               });
+           
+  //           }    
+  //   });
+
+
+ 
+</script>
+</html>

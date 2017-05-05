@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>便利店测试</title>
+    <meta name="baidu-site-verification" content="4vNEpUr1Eg" />
+    <meta name="keywords" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <meta name="description" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="grey"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="./static/css/lingwa.css" media="all">
+    <link href="" rel="apple-touch-icon-precomposed">
+    <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./static/js/rem.js"></script>
+</head>
+<body>
+    <div class="order_details">
+        <a class="botom_return" href="" style="margin:.2rem auto;">
+            <span>添加商品</span>
+        </a>
+        <ul style="margin-bottom:.2rem;">
+            <li data-id="278">
+                <img src="static/images/hou.jpg">
+                <p class="li_tips">红牛</p>
+                <p class="li_price">￥3.00</p>
+                <p class="li_spec">355ml/听</p>
+                <div class="add_return">
+                    <select onchange="local();">
+                        <option value="-1">选择</option>
+                        <option value="1">滞销</option>
+                        <option value="2">配错</option>
+                        <option value="3">次品</option>
+                        <option value="0">其他</option>
+                    </select>
+                    <input type="number" name="" value="" oninput="local();">
+                </div>
+            </li>
+            <li data-id="178">
+                <img src="static/images/hou.jpg">
+                <p class="li_tips">红牛</p>
+                <p class="li_price">￥3.00</p>
+                <p class="li_spec">355ml/听</p>
+                <div class="add_return">
+                    <select onchange="local();">
+                        <option value="-1">选择</option>
+                        <option value="1">滞销</option>
+                        <option value="2">配错</option>
+                        <option value="3">次品</option>
+                        <option value="0">其他</option>
+                    </select>
+                    <input type="number" name="" value="" oninput="local();">
+                </div>
+            </li>
+            <li data-id="78">
+                <img src="static/images/hou.jpg">
+                <p class="li_tips">红牛</p>
+                <p class="li_price">￥3.00</p>
+                <p class="li_spec">355ml/听</p>
+                <div class="add_return">
+                    <select onchange="local();">
+                        <option value="-1">选择</option>
+                        <option value="1">滞销</option>
+                        <option value="2">配错</option>
+                        <option value="3">次品</option>
+                        <option value="0">其他</option>
+                    </select>
+                    <input type="number" name="" value="" oninput="local()">
+                </div>
+            </li>
+        </ul>
+        <input type="text" name="" id="bei" placeholder="备注">
+        <a href="#" class="return_save">添加</a>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    document.title = "退货单详情";
+    $("body").css("background-color","#fafafa");
+
+function local(){
+    var li = $('li');
+    var now =[];
+    for (var i = 0; i < li.length; i++) {
+        var id = $(li[i]).attr('data-id');
+        var reason = $(li[i]).find('select').val();
+        var num = $(li[i]).find('input').val();
+        var xf = {};
+        xf["id"] = id;
+        xf["num"] = num;
+        xf["reason"] = reason;
+        if (reason>=0) {
+            now.push(xf);
+        }
+    }
+    //console.log(JSON.stringify(now));
+    var storage = window.localStorage;
+    storage.setItem("tuihuo",JSON.stringify(now));
+}
+$(function(){
+    var storage = window.localStorage;
+    var tou = JSON.parse(storage.getItem("tuihuo"));
+    for (var i = 0; i < tou.length; i++) {
+        var it_id = tou[i].id;
+        var num = tou[i].num;
+        var reason =tou[i].reason;
+        $('li').each(function(){
+            var id = $(this).attr('data-id');
+            if (it_id == id) {
+                $(this).find('input').val(num);
+                $(this).find('select').val(reason);
+            }
+        })
+    }
+
+})
+
+$('.return_save').on('click',function(){
+    $('li').each(function(){
+       var sl = $(this).find('select').val();
+       var io = $(this).find('input').val();
+       
+       if (io == "" || sl<0) {
+            if (sl>=0 || io != "") {
+               alert(1);
+               return false; 
+            }else{
+                if (confirm("请输入")) {
+                var li = $('li');
+                var now =[];
+                for (var i = 0; i < li.length; i++) {
+                    var id = $(li[i]).attr('data-id');
+                    var reason = $(li[i]).find('select').val();
+                    var num = $(li[i]).find('input').val();
+                    var xf = {};
+                    xf["id"] = id;
+                    xf["num"] = num;
+                    xf["reason"] = reason;
+                    if (reason>=0&&num>0) {
+                        now.push(xf);
+                    }
+
+                }
+                alert(JSON.stringify(now));
+                return false; 
+                }
+                
+            }
+        }
+    })
+    
+
+    
+    // localStorage.removeItem("tuihuo");
+    
+    
+
+})
+</script>

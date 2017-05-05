@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>便利店测试</title>
+    <meta name="baidu-site-verification" content="4vNEpUr1Eg" />
+    <meta name="keywords" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <meta name="description" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="grey"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="./static/css/lingwa.css" media="all">
+    <link href="" rel="apple-touch-icon-precomposed">
+    <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./static/js/rem.js"></script>
+</head>
+<body>
+    <div class="shop_list_content">
+        <div class="shop_list_search">
+            <input type="" name="itemName" id="sec">
+            <span class="cl" id="cl">x</span>
+            <span class="cancel" style="display:none" id="cancel">取消</span>
+        </div>
+        <div class="list_1">
+            <div class="shop_con">
+            <a href="" style="color:#000;">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </a>     
+            </div>
+            <div class="shop_con" >
+            <a href="" style="color:#000;">
+                <p>淘粉吧自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </a>
+            </div>
+            <div class="shop_con" ontouchend="go();">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con" ontouchend="go();">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+            <div class="shop_con">
+                <p>领蛙自助便利店</p>
+                <span>杭州领带蛙网络科技有限公司</span>
+            </div>
+        </div>
+        <p class="more_sou">更多店铺请通过顶部搜索框查找</p>
+    </div>
+    
+</body>
+</html>
+<script type="text/javascript">
+var touchmove;
+$(document).on( "touchstart", function() {
+  touchmove = false;
+});
+  $(document).on( "touchmove", function() {
+  touchmove = true;
+});
+
+$(function(){
+  $(".more_sou").click(function() {
+      $("html,body").animate({scrollTop:0}, 500);
+  }); 
+ })
+
+function go(){
+    if (touchmove) {
+        return;
+    }
+    alert(1);
+}
+    document.title = "便利店列表";
+    // 当输入有值的时候 x 显示出来 反之没有
+    document.getElementById("sec").addEventListener("keyup",function(){
+        if(this.value.length>0)
+        {
+            document.getElementById("cl").style.visibility="visible";
+            document.getElementById("cl").onclick=function()
+            {
+                document.getElementById("sec").value="";
+                document.getElementById("cl").style.visibility="hidden";
+            }
+        }else
+        {
+            document.getElementById("cl").style.visibility="hidden";
+        }
+    });
+    // 点击 取消按钮出现
+    $('input[name="itemName"]').on("touchend",function() {
+        $('input[name="itemName"]').css("width","67%");
+        $("#cancel").show();
+        $('input[name="itemName"]').focus();
+    });
+    $("#cancel").on("touchend",function() {
+        $('input[name="itemName"]').css("width","87%");
+        $('input[name="itemName"]').val("");
+        $("#cl").css("visibility","hidden");
+        $("#cancel").hide();
+    })
+</script>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>便利店测试</title>
+    <meta name="baidu-site-verification" content="4vNEpUr1Eg" />
+    <meta name="keywords" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <meta name="description" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="grey"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="./static/css/lingwa.css" media="all">
+    <link href="" rel="apple-touch-icon-precomposed">
+    <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./static/js/rem.js"></script>
+</head>
+<body>
+    <div class="manage_content">
+        <ul>
+            <li>
+                <span>公司全称</span>
+                <input type="" name="" placeholder="发票抬头" id="full_name">
+            </li>
+            <li>
+                <span>公司简称</span>
+                <input type="" name="" placeholder="公司简称或品牌名" id="short_name">
+            </li>
+            <li>
+                <span>联系人</span>
+                <input type="" name="" id="name">
+            </li>
+            <li>
+                <span>职位</span>
+                <input type="" name="" id="position">
+            </li>
+            <li>
+                <span>联系电话</span>
+                <input type="" name="" id="phone">
+            </li>
+            <li>
+                <span>配送地址</span>
+                <input type="" name="" id="address">
+            </li>
+        </ul>
+        <div class="discount">
+            <span>折扣</span>
+            <input type="" name="" value="0.8" id="discount">
+        </div>
+        <a href="" onclick="return save();">开通</a>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    document.title = "开通便利店";
+    var checkSubmitFlag = false;
+    function save() {
+        var full_name = $("#full_name").val();
+        var short_name = $("#short_name").val();
+        var name = $("#name").val();
+        var position = $("#position").val();
+        var phone =$("#phone").val();
+        var address =$("#address").val();
+        var discount =$("#discount").val();
+        var a =isNaN(discount);
+        if(!full_name||!short_name||!position||!phone||!address||!name||a){
+            if (a = true) {
+                alert("折扣必须是数字");
+                return false;
+            }else{
+                alert("请输入信息");
+                return false;
+            }
+        }else{
+                checkSubmitFlag = true;
+                return true;
+        }   
+    }
+</script>

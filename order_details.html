@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>便利店测试</title>
+    <meta name="baidu-site-verification" content="4vNEpUr1Eg" />
+    <meta name="keywords" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <meta name="description" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="grey"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="./static/css/lingwa.css" media="all">
+    <link href="" rel="apple-touch-icon-precomposed">
+    <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./static/js/rem.js"></script>
+</head>
+<body>
+    <div class="order_details">
+        <div class="details_tip">
+            <p>编号：<span>201606131411961465799177892</span></p>
+            <p>金额：<span>￥768.32</span></p>
+            <p>备注：<span>具体的备注文字</span></p>
+        </div>
+        <ul>
+            <li>
+                <img src="static/images/hou.jpg">
+                <p class="li_tips">红牛</p>
+                <p class="li_price">￥3.00</p>
+                <p class="li_spec">355ml/听</p>
+                <div class="li_num">98</div>
+            </li>
+            <li>
+                <img src="static/images/hou.jpg">
+                <p class="li_tips">红牛</p>
+                <p class="li_price">￥3.00</p>
+                <p class="li_spec">355ml/听</p>
+                <div class="li_num">9</div>
+            </li>
+            <li>
+                <img src="static/images/hou.jpg">
+                <p class="li_tips">红牛</p>
+                <p class="li_price">￥3.00</p>
+                <p class="li_spec">355ml/听</p>
+                <div class="li_num">98</div>
+            </li>
+        </ul>
+
+        <a href="" data-id="456" data-shop="789" class="order_push">上架</a>
+        <a href="javascript:void(0);" data-id="222" data-shop="333" class="order_over">不上架</a>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    document.title = "采购订单详情";
+    //点击次数
+    var count =0;
+    $(".order_over").on("touchend",function(event){
+        var wen = $(this).text();
+        if (count<2) {
+            count++;
+            $(this).text("不上架(请再次点击确认)");
+        }if (count==2) {
+            if (confirm("确认无需上架？")) {
+
+            }else{
+                event.stopPropagation();
+            }
+        }
+        console.log(count);
+        
+    });
+</script>
+var count =0;
+$('.xiang').on("touchend",function(){
+    count++;
+    var xiangyin = $(this).attr("gouwu");
+    if ($('.n').css("z-index") == 1000) {
+        $('.n').animate({top:'.3rem'});
+        $('.n').css("z-index","-1");
+        document.activeElement.blur();
+    }
+    if (count%2 ==0) {
+        $('#sec').val("");
+        $('#sec').animate({"background-position":"47%"});
+        $('.sou').css('display','block');
+        $('.sou').animate({left:"50%"});
+        $('.wo').css('visibility','hidden');
+        $("ul li").show();
+        console.log("双数");
+    }else{
+        $('#sec').val(xiangyin);
+        $('#sec').animate({"background-position":'.2rem'},200);
+        $('#sec').siblings('.sou').animate({left:"11%"});
+        $('.sou').css('display','none');
+        $('.wo').css('visibility','visible');
+        $(".wo").on("touchend",function(){
+            count--;
+            console.log(count);
+        });
+        $("div.su").each(function(){
+            if ($(this).is(":hidden")) {
+                $(this).parent().hide();
+            }else{
+                $(this).parent().show();
+            }
+        });
+        console.log("单数");
+    }
+});

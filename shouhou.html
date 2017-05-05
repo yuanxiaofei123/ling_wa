@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>便利店测试</title>
+    <meta name="baidu-site-verification" content="4vNEpUr1Eg" />
+    <meta name="keywords" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <meta name="description" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="grey"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="./static/css/lingwa.css" media="all">
+    <link href="" rel="apple-touch-icon-precomposed">
+    <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+    <div class="shop_list_content">
+        <div class="spend_content" style="margin-top:.2rem;">
+            <div class="spending_list" id="1">
+                <p class="message_name">
+                    郑旭东
+                </p>
+                <p class="message_nei">
+                    劲仔小鱼要辣的，不要酸奶，下单金额可以引导1000元。
+                </p>
+                <p class="sup" style="width:88%;margin:0 0 0 7.5%;padding:.08rem 0;">
+                    <!-- 总计 -->
+                    <span class="sup_list">
+                        <span>2016-06-18</span>
+                        <span class="sup_data">15:22:00</span>
+                        <span class="fr" style="color:red;">待处理</span>
+                    </span>
+                </p>
+                <div class="delete">
+                    <span class="del" >删除</span>
+                </div>
+            </div>
+            <div class="spending_list" id="3">
+                <p class="message_name">
+                    <span>噗哈哈</span>
+                </p>
+                <p class="message_nei">
+                    今天又补了一次货，如果还是消费不上来，拆货架，拆拆拆。
+                </p>
+                <p class="sup" style="width:88%;margin:0 0 0 7.5%;padding:.08rem 0;">
+                    <!-- 总计 -->
+                    <span class="sup_list">
+                        <span>2016-06-18</span>
+                        <span class="sup_data">15:22:00</span>
+                        <span class="fr">已处理</span>
+                    </span>
+                </p>
+                <!-- 退款 -->
+                <div class="delete">
+                    
+                </div>
+            </div>
+            <div class="spending_list" id="1">
+                <p class="message_name">
+                    郑旭东
+                </p>
+                <p class="message_nei">
+                    劲仔小鱼要辣的，不要酸奶，下单金额可以引导1000元。
+                </p>
+                <p class="sup" style="width:88%;margin:0 0 0 7.5%;padding:.08rem 0;">
+                    <!-- 总计 -->
+                    <span class="sup_list">
+                        <span>2016-06-18</span>
+                        <span class="sup_data">15:22:00</span>
+                        <span class="fr" style="color:red;">待处理</span>
+                    </span>
+                </p>
+                <div class="delete">
+                    <span class="del" >删除</span>
+                </div>
+            </div>
+            <div class="spending_list" id="3">
+                <p class="message_name">
+                    <span>噗哈哈</span>
+                </p>
+                <p class="message_nei">
+                    今天又补了一次货，如果还是消费不上来，拆货架，拆拆拆。
+                </p>
+                <p class="sup" style="width:88%;margin:0 0 0 7.5%;padding:.08rem 0;">
+                    <!-- 总计 -->
+                    <span class="sup_list">
+                        <span>2016-06-18 15:22:00</span>
+                        <span class="fr">已处理</span>
+                    </span>
+                </p>
+                <!-- 退款 -->
+                <div class="delete">
+                </div>
+            </div>
+        </div>
+        <p class="sw"  id="loading" style="display:none;">正在加载更多数据.....</p>
+    </div>
+    <a href="" class="botom_push">
+        <span>提交售后诉求</span>
+    </a>
+   
+</body>
+</html>
+<script type="text/javascript">
+$("body").css("background-color","#e8e8e8");
+document.title = "售后服务";
+$(document).on('click', ".del", (function (){
+    if (confirm("确定删除吗？")) {
+        $(this).parent().parent().fadeOut(500,function(){
+            $(this).remove();
+        })
+    }
+}));
+
+function formatDate(str) { 
+         var res = /^[0-9]$/
+        var now=new Date(str);
+        var year=now.getFullYear(); 
+        var month=now.getMonth()+1; 
+        if(res.test(month)){
+            month = "0"+month;
+        }
+        var date=now.getDate(); 
+        if(res.test(date)){
+            date = "0"+date;
+        }
+        var hour=now.getHours(); 
+        if(res.test(hour)){
+            hour = "0"+hour;
+        }
+        var minute=now.getMinutes(); 
+        if(res.test(minute)){
+            minute = "0"+minute;
+        }
+        var second=now.getSeconds(); 
+        if(res.test(second)){
+            second = "0"+second;
+        }
+        return year+"-"+month+"-"+date+" "+hour+":"+minute+":"+second; 
+    }
+    window.onscroll = function(){
+     if (Math.abs($(document).scrollTop() >= $(document).height()-$(window).height())) {
+        $("#loading").css("display","block");
+        var s = {"status":200,"msg":"OK","data":{"pageNum":1,"pageSize":8,"size":4,"startRow":1,"endRow":4,"total":559,"pages":70,"list":[{"id":"BLD20160704125240000026","totalPrice":100,"buyerId":null,"shopId":null,"buyerName":"Mr.S","shopName":null,"createdTime":1467607960000,"status":1,"headImgurl":"http://wx.qlogo.cn/mmopen/ISVtUfMsITkt5GaXcHD7fJxNN1YNCJc5giaxlfiaiaSFMrE8Gn8t6vXsqTrgXia3icx7AcRNRUOiaxQ0vQVyTbyyJqFgftN0VCBRoy/0","sourcing":null,"consume":null,"month":null,"shopOrderItems":[{"id":955,"orderId":null,"itemId":null,"itemName":"1元棒冰","num":1,"price":100}]},{"id":"BLD20160704124754000025","totalPrice":180,"buyerId":null,"shopId":null,"buyerName":"头上长树","shopName":null,"createdTime":1467607674000,"status":1,"headImgurl":"http://wx.qlogo.cn/mmopen/EpaDQa6cD4BBXsCAENh2icmUIwPr0tU2JuVlAmLicJjrPVaXByRA0AwicdXqYV6qMyZW3vTDBbaC9YPMvqBGToujiaRJauc4otib1/0","sourcing":null,"consume":null,"month":null,"shopOrderItems":[{"id":954,"orderId":null,"itemId":null,"itemName":"董小姐薯片","num":2,"price":90}]},{"id":"BLD20160704124605000023","totalPrice":1860,"buyerId":null,"shopId":null,"buyerName":"YanCheng","shopName":null,"createdTime":1467607565000,"status":1,"headImgurl":"http://wx.qlogo.cn/mmopen/PiajxSqBRaEJ6E1cicgwGFPJyWMfICxicjbUFFbFOHhGXOMYApyxEj57dvqOwxAwTwPOK6tTF8t0yMVvVibVrbsZ2A/0","sourcing":null,"consume":null,"month":null,"shopOrderItems":[{"id":946,"orderId":null,"itemId":null,"itemName":"董小姐薯片","num":5,"price":90},{"id":947,"orderId":null,"itemId":null,"itemName":"卡尔顿丹麦香颂面包","num":6,"price":60},{"id":948,"orderId":null,"itemId":null,"itemName":"劲仔小鱼","num":5,"price":60},{"id":949,"orderId":null,"itemId":null,"itemName":"可口可乐","num":1,"price":90},{"id":950,"orderId":null,"itemId":null,"itemName":"瓶装雀巢咖啡","num":3,"price":220}]},{"id":"BLD20160704122922000021","totalPrice":390,"buyerId":null,"shopId":null,"buyerName":"A  郑华杰(领蛙)","shopName":null,"createdTime":1467606562000,"status":1,"headImgurl":"http://wx.qlogo.cn/mmopen/wFUHkia2T2KLH9BibhZzwHn5wDQtkynIPsArcVtG3Aawnd9ibFJoCV8hozic8LryDTnvsKjcYfORF527wBBBEib4drsoyMicsUpePq/0","sourcing":null,"consume":null,"month":null,"shopOrderItems":[{"id":943,"orderId":null,"itemId":null,"itemName":"卡尔顿丹麦香颂面包","num":5,"price":60}]}],"firstPage":1,"prePage":0,"nextPage":2,"lastPage":8,"isFirstPage":true,"isLastPage":false,"hasPreviousPage":false,"hasNextPage":true,"navigatePages":8,"navigatepageNums":[1,2,3,4,5,6,7,8]}}
+        //var list=s["data"]["list"];
+        var list=s.data.list;
+        for (var i = 0; i < list.length; i++) {
+            var html="";
+            var buyerName = list[i].buyerName;
+            var id = list[i].id;
+            var createdTime = formatDate(list[i].createdTime);
+            html+='<div class="spending_list"><p class="message_name"><span>'+buyerName+'</span></p><p class="message_nei">'+buyerName+'</p><p class="sup" style="width:88%;margin:0 0 0 7.5%;padding:.08rem 0;"><span class="sup_list"><span>'+createdTime+'</span><span class="fr" style="color:red;">'+"未处理"+'</span></span></p><div class="delete" data-id='+id+'><span class="del" >删除</span></div></div>';
+            $(".spend_content").append(html);
+        }
+        $("#loading").css("display","none");
+     }
+
+ }
+</script>

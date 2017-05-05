@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>自助便利店</title>
+    <meta name="baidu-site-verification" content="4vNEpUr1Eg" />
+    <meta name="keywords" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <meta name="description" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="grey"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="/static/css/shop/reset.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="/static/css/shop/lingwa.css" media="all">
+    <link href="" rel="apple-touch-icon-precomposed">
+    <script type="text/javascript" src="/static/js/shop/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/static/js/shop/rem.js"></script>
+</head>
+<body style="background:#fff;">
+<div class="shop_list_content">
+        <div class="shop_list_search">
+        	<form  name="itemForm" id="form" action="/convenient/shop_consumeList.htm" method="get">
+	            <input type="text" name="name" placeholder="昵称或姓名" value="" id="sec">
+	             <input type="hidden" name="shop_id"  value="1385">
+	             <input type="submit" style="display:none">
+	            <span class="cl" id="cl">x</span>
+        	</form>
+             <a class="cancel" style="display:none;color:#000;" id="cancel" href="/convenient/shop_consumeList.htm?shop_id=1385">取消</a>
+        </div>
+        <div class="spend_content">
+	       
+            
+        </div>
+    </div>
+    <div class="footer">
+       <a href="/convenient/manage/shop_index.htm?shop_id=1385" class="home ">首页<i></i><b></b></a>
+       <a href="/convenient/shop_sourcingIndex.htm?shop_id=1385" class="home ">采购<i></i><b></b></a>
+       <a href="/convenient/shop_consumeList.htm?shop_id=1385" class="home live">消费记录<i></i><b></b></a>
+       <a href="/convenient/home/shop_index.htm?shop_id=1385" class="home ">店铺管理<b></b></a>
+   </div> 
+   
+<script type="text/javascript">
+    document.title = "消费记录";
+    $("body").css("background-color","#e8e8e8");
+    // 当输入有值的时候 x 显示出来 反之没有
+    $("#sec").keyup(function(){
+        var a = $(this).val();
+        if (a.length>0) {
+                $("#cl").css("visibility","visible");
+            }else{
+                $("#cl").css("visibility","hidden")
+            }
+        $("#cl").click(function(){
+            $("#sec").val("");
+            $("#cl").css("visibility","hidden");
+        });  
+    });
+    // 点击 取消按钮出现
+    $('input[name="name"]').click(function() {
+        $('input[name="name"]').css("width","69.5%");
+        $("#cancel").show();
+        $('input[name="name"]').focus();
+    });
+    //$("#cancel").click(function() {
+    //    $('input[name="name"]').css("width","87%");
+    //    $('input[name="name"]').val("");
+    //    $("#cl").css("visibility","hidden");
+    //    $("#cancel").hide();
+        
+    //})
+    function refund(id){
+    	 if (confirm("确定要退款吗？")) {
+    	 	alert("开发中");
+    	 }
+    }
+    
+    function formatDate(str) { 
+    	var now=new Date(str);
+		var year=now.getFullYear(); 
+		var month=now.getMonth()+1; 
+		var date=now.getDate(); 
+		var hour=now.getHours(); 
+		var minute=now.getMinutes(); 
+		var second=now.getSeconds(); 
+		return year+"-"+month+"-"+date+" "+hour+":"+minute+":"+second; 
+	} 
+	
+	function formatMoney(num) {
+		var money = num/100;
+		var float = num%100;
+		if(float == 0){
+			money = money + ".00";
+		}
+		return money;
+	}
+    
+    var page = 1 ;
+    var shopid = 1385;
+    var name = $('#sec').val();
+    var hasNextPage = true;
+    $(document).ready(function(){
+    	$.ajax({
+				url:'/convenient/shop_consumeTest.json',
+				type:'POST',
+				data: {shop_id:shopid,name:name,page:page,rows:5},
+				success:function(data){
+					if(data.data.hasNextPage) page +=1;
+					var lists = data.data.list;
+					for(var i = 0; i < lists.length; i++){
+						var html="";
+						var buyerName = lists[i].buyerName;
+			            var headImgurl = lists[i].headImgurl;
+			            var id = lists[i].id;
+			            var createdTime = formatDate(lists[i].createdTime);
+			            var totalPrice = formatMoney(lists[i].totalPrice);
+			            var state = lists[i].status;
+			            html+='<div class="spending_list" id='+id+'><p class="message"><img src="'+headImgurl+'"><span>'+buyerName+'</span></p>';
+			            var shop = lists[i].shopOrderItems;
+			            for (var j = 0; j < shop.length; j++) { 
+			                var itemName = shop[j].itemName;
+			                var price = formatMoney(shop[j].price);
+			                var num = shop[j].num;
+			                html+='<p class="foods"><span class="foods_01"><span class="foods_name"><span>'+itemName+'</span><span class="foods_price">￥'+price+'</span><span class="foods_num">X'+num+'</span></span></span></p>';
+			            }
+			            html+='<p class="sup"><span class="sup_list"><span>'+createdTime+'</span><span class="fr">￥'+totalPrice+'</span></span></p><div class="delete">';
+			            if(state==2){
+			            	html+='<span class="del">已退款</span></div></div>'
+			            }else if(state==1){
+			            	html+='<span class="del" onclick="refund('+id+')">退款</span></div></div>'
+			            }
+			            
+           				$(".spend_content").append(html);
+					}
+				}
+				
+			})
+    });
+    
+    window.onscroll = function () {
+	    if (Math.abs($(document).scrollTop() >= $(document).height()-$(window).height())) {
+	        if(!hasNextPage){
+	        	return;
+	        }
+	        $.ajax({
+				url:'/convenient/shop_consumeTest.json',
+				type:'POST',
+				data: {shop_id:shopid,name:name,page:page,rows:5},
+				success:function(data){
+					if(data.data.hasNextPage){
+						 page +=1;
+					}else{
+						hasNextPage = false;
+					}
+					var lists = data.data.list;
+					for(var i = 0; i < lists.length; i++){
+						var html="";
+						var buyerName = lists[i].buyerName;
+			            var headImgurl = lists[i].headImgurl;
+			            var id = lists[i].id;
+			            var createdTime = formatDate(lists[i].createdTime);
+			            var totalPrice = formatMoney(lists[i].totalPrice);
+			            var state = lists[i].status;
+			            html+='<div class="spending_list" id='+id+'><p class="message"><img src="'+headImgurl+'"><span>'+buyerName+'</span></p>';
+			            var shop = lists[i].shopOrderItems;
+			            for (var j = 0; j < shop.length; j++) { 
+			                var itemName = shop[j].itemName;
+			                var price = formatMoney(shop[j].price);
+			                var num = shop[j].num;
+			                html+='<p class="foods"><span class="foods_01"><span class="foods_name"><span>'+itemName+'</span><span class="foods_price">￥'+price+'</span><span class="foods_num">X'+num+'</span></span></span></p>';
+			            }
+			            html+='<p class="sup"><span class="sup_list"><span>'+createdTime+'</span><span class="fr">￥'+totalPrice+'</span></span></p><div class="delete">';
+			            if(state==2){
+			            	html+='<span class="del">已退款</span></div></div>'
+			            }else if(state==1){
+			            	html+='<span class="del" onclick="refund('+id+')">退款</span></div></div>'
+			            }
+           				$(".spend_content").append(html);
+					}
+				}
+				
+			})
+	     }
+	} 
+</script>
+</body>
+</html>

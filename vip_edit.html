@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="baidu-site-verification" content="4vNEpUr1Eg" />
+    <meta name="keywords" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <meta name="description" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="grey"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="./static/css/lingwa.css" media="all">
+    <link href="" rel="apple-touch-icon-precomposed">
+    <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./static/js/rem.js"></script>
+</head>
+<body>
+    <div class="manage_content">
+        <ul>
+            <li>
+                <span>限时福利：</span>
+                <input type="" name="" placeholder="折扣" id="discount" value="">
+            </li>
+            <li>
+                <span>限时补贴：</span>
+                <input type="" name="" placeholder="金额" id="" value="">
+            </li>
+            <li>
+                <span>开始时间：</span>
+                <select>
+                    <option value="21:00">21:00</option>
+                    <option value="19:00">19:00</option>
+                </select>
+            </li>
+        </ul>
+        <p style="text-align:left;padding-left:3%;margin:.2rem 0 .4rem;">在设定的时间开始自动打折。</p>
+        <div class="discount">
+            <span>开始时间：</span>
+            <input type="" name="" placeholder="金额" id="money">
+        </div>
+        <p style="width:94%;margin:.2rem auto 0.5rem;text-align:left;">本月截至2016-7-15亏损为￥253.33，当亏损超过止损金额，次日自动取消折扣。</p>
+        <div class="show_check">
+            <span>购买时显示市场价：</span>
+            <input type="checkbox" name="" checked>
+        </div>
+        <p style="width:94%;margin:.2rem auto 0.5rem;text-align:left;">
+            当大部分商品销售价定价较高，超过市场价时，建议取消显示市场价
+        </p>
+        <a href="" style="margin-bottom:0;" class="save">保存</a>
+        <p>请在领哇客服的协助下设置</p>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    document.title = "高级设置";
+    $("body").css("background-color","#ececec");
+    $("a").on("touchend",function(){
+        var op= $("select").find("option:selected").val();
+        alert($("#discount").val())
+        alert(op);
+    })
+</script>
