@@ -1,26 +1,2019 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>RunJS</title>
-        <link rel="stylesheet" href="http://media.html5media.info/styles.css"/>
-        <!-- This line is all you need to enable HTML5 video and audio tags in all major browsers! -->
-        <script type="text/javascript" src="./static/js/h5.js"></script>
+<!DOCTYPE HTML>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>便利店测试</title>
+        <meta name="baidu-site-verification" content="4vNEpUr1Eg" />
+        <meta name="keywords" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+        <meta name="description" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
+        <!--允许全屏-->
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="yes" name="apple-touch-fullscreen" />
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="grey"/>
+        <meta name="screen-orientation" content="portrait">
+        <meta name="x5-orientation" content="portrait">
+        <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all"> 
+        <link rel="stylesheet" type="text/css" href="./static/css/lingwa.css" media="all">
+        <link rel="stylesheet" type="text/css" href="./static/css/tanchu.css" media="all">
+        <link rel="stylesheet" type="text/css" href="./static/css/swiper.min.css" media="all">
+        <link href="" rel="apple-touch-icon-precomposed">
+        <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="./static/js/tanchu.js"></script>
+        <script type="text/javascript" src="./static/js/JQuery_PageSlider.js"></script>
+        <script type="text/javascript" src="./static/js/swiper-3.4.2.jquery.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+    <!-- <div class="fc_head">
+        <input type="" name="" placeholder="搜索或者扫描商品条形码" class="sousuo" id="sous">
+        <img src="static/images/tiaoxing.png" class="tiaoxing">
+        <span class="wo" id="cl" style="z-index: 1001;"></span>
+    </div> -->
+    <!-- 条形码提醒 -->
+    <span class="tx_tip">扫描商品条形码</span>
+    <!-- 没有结果 -->
+    <div class="nono">
+        <img src="static/images/no_no.png">
+        <p>暂时没有匹配的商品哦</p>
+        <a href="tel://13811111112">
+            <p style="margin-top: 0.18rem;">若有问题请及时联系店铺管理员</p>
+            <p style="margin-top: 0;">戴文敏：13811111112</p>
+        </a>
+    </div>
+    <!-- <div class="tabs">
+        <a href="#" class="active">常买的</a>
+        <a href="#">第一层</a>
+        <a href="#">第二层</a>
+        <a href="#">第二层</a>
+        <a href="#">第二层</a>
+        <a href="#">第二层</a>
+    </div> -->
+<div id="topNav" class="tabs swiper-container " style="position: relative;">
+      <div class="swiper-wrapper" id="menu">
+        <a href="#" class="swiper-slide"><span>常买的</span></a>
+        <a href="#" class="swiper-slide"><span>第一层</span></a>
+        <a href="#" class="swiper-slide "><span>第二层</span></a>
+        <a href="#" class="swiper-slide "><span>第二层</span></a>
+        <a href="#" class="swiper-slide "><span>第二层</span></a>
+        <a href="#" class="swiper-slide "><span>第二层</span></a>
+        <a href="#" class="swiper-slide "><span>第二层</span></a>
+        <a href="#" class="swiper-slide "><span>第二层</span></a>
+        <a href="#" class="swiper-slide "><span>第层</span></a>
+      </div>
+  <div class="xuanfu_tiao"><img src="static/images/tiaoxing.png"></div>
+</div>
+    <div id="banner" class="swiper-container v">
+    <div class="swiper-wrapper" id="j">
+      <div class="swiper-slide ">
+        <div class="content-slide">
+        <!-- <p class="title">常买的<b></b></p> -->
+        <ul class="news-list">
+            <li class="food-item group_2 k" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦2缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2 k" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2 k" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食1</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+                        <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+                        <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+                        <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+                        <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+                        <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+                        <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+                        <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+                        <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+        </ul>
+        </div>
+      </div>
+      <div class="swiper-slide ">
+        <div class="content-slide">
+         <!-- <p class="title">第一层<b></b></p> -->
+         <ul class="news-list">
+             <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+         </ul>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content-slide"> 
+        <!-- <p class="title">第二层<b></b></p> -->
+        <ul class="news-list">
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+        </ul>
+        </div>
+      </div>
+            <div class="swiper-slide">
+        <div class="content-slide">
+        <!-- <p class="title">常买的<b></b></p> -->
+        <ul class="news-list">
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+        </ul>
+        </div>
+      </div>
+            <div class="swiper-slide">
+        <div class="content-slide">
+        <p class="title">常买的<b></b></p>
+        <ul class="news-list">
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+        </ul>
+        </div>
+      </div>
+            <div class="swiper-slide">
+        <div class="content-slide">
+        <!-- <p class="title">常买的<b></b></p> -->
+        <ul class="news-list">
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+        </ul>
+        </div>
+      </div>
+            <div class="swiper-slide">
+        <div class="content-slide">
+        <!-- <p class="title">常买的<b></b></p> -->
+        <ul class="news-list">
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+            <li class="food-item group_2" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+                    <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                    <span data-img="http://assets.lingwa.com.cn/images/item/969399a7-a607-4bbc-b6de-f57ba1e901b8.jpg">
+                        <img src="static/images/so_so.png" class="food_icon">
+                    </span>
+                    <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                    <p class="food_title">金梦缘素食</p>
+                    <div class="su j">         
+                        <img src="static/images/close.png" class="s">           
+                        <p class="num">0</p>
+                        <div class="shop_tip">金梦缘素</div>
+                        <p class="shop_price">￥<span>6.00</span></p>
+                    </div>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- 购物车 -->
+<div class="group">
+   <p class="group_head">
+       <b></b>
+       <span class="head_left">购物车</span>
+       <img src="static/images/gp_del.png">
+       <span class="head_right">清空</span>
+   </p>
+   <div class="group_content">
+       <ul>
+           <!-- <li class="food-item group_1" data-pid="1" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+               <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                <p class="food_title">金梦缘素食红枣饼干</p>
+                <div class="su j">         
+                    <img src="static/images/close.png" class="s">           
+                    <p class="num">0</p>
+                    <div class="shop_tip">金梦缘素食红枣饼干</div>
+                    <p class="shop_price">￥<span>6.00</span></p>
+                </div>
+           </li>
+           <li class="food-item group_1" data-pid="19549" data-cid="24" data-onprice="0.70" data-price="0.50" data-amount="0">
+               <img src="http://assets.lingwa.com.cn/images/item/83bfba6f-f08c-4cc2-bff0-621d1df17f03.jpg">
+                <span class="food_pri">￥<span class="fei">4.00</span><span class="zhekou">￥6.00</span></span>
+                <p class="food_title">金梦缘素食红枣饼干</p>
+                <div class="su">         
+                    <img src="static/images/close.png" class="s">           
+                    <p class="num">0</p>
+                    <div class="shop_tip">金梦缘素食红枣饼干</div>
+                    <p class="shop_price">￥<span>6.00</span></p>
+                </div>
+           </li> -->  
+       </ul>
+   </div>                 
+</div>
+<!-- 扫码结果 -->
+<div class="sm_jie" style="display: none;">
+    <ul>
         
-        <!-- This line enables all the other HTML5 elements in IE. It's not necessary if you just want to play video. -->
-        <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	</head>
-	<body>
-		<h1>
-			html5media 视频播放器演示(HTML5)
-		</h1>
-		<div id='video'>
-			
-                    <video class="video" poster="http://media.html5media.info/poster.jpg" width="618" height="347" controls preload>
-                        <source src="http://media.html5media.info/video.mp4" media="only screen and (min-device-width: 960px)"></source>
-                        <source src="http://media.html5media.info/video.iphone.mp4" media="only screen and (max-device-width: 960px)"></source>
-                        <source src="http://media.html5media.info/video.ogv"></source>
-                    </video>
-		</div>
-	</body>
+        <!-- 操作按钮 -->
+        <span class="sm_cz sm_go">继续购物</span>
+        <span class="sm_cz sm_sure">确定</span>
+        
+    </ul>
+    
+</div>
+<div class="Layer2" ></div>
+<div class="imgFull" style="display: none; width: 375px; height: 375px;">
+    <img src="" class="su" style="width: 375px; height: 375px;">
+    <div class="da_price"></div>
+    <div id="name_1"></div>
+</div>
+<div class="Layer1"></div>
+<!-- 底部 -->   
+<div class="bianli_pay">
+    <div class="bi" id="sure">
+        <span class="number" style="display:none;">0</span>
+        <span class="xiang" gouwu="购物车"></span>
+        <span class="bianli_num" style="display:none;">￥<span>0.00</span></span>
+        <span class="cost_price" style="display:none;">￥<span>0.00</span></span>
+        <span class="shou_price" style="display:none;">公司补贴￥<span>0.00</span></span>
+    </div>
+    <div class="pay">去支付</div>
+</div>
+<div class="Layer" ></div>
+</div>
+
+<script>
+// $(function(){
+//     FastClick.attach(document.body);
+//      $(".ui-loader").hide();
+// })
+$(document).on( "touchstart", function() {
+  touchmove = false;
+});
+$(document).on( "touchmove", function() {
+  touchmove = true;
+});
+window.onload = function() {
+    
+var mySwiper1 = new Swiper('#topNav',{
+      freeMode : true,
+      freeModeSticky : true,
+      slidesPerView : 'auto',
+      freeModeMomentumRatio: 0.5,
+       loopAdditionalSlides : 1,
+       initialSlide:0,
+      touchMoveStopPropagation : false,
+      // watchSlidesVisibility : true,
+      onTap: function(swiper){
+         mySwiper1.slideTo( mySwiper1.clickedIndex);
+         mySwiper2.slideTo( mySwiper1.clickedIndex);
+
+      },
+      onTouchStart:function(swiper){
+      }
+  });
+var documentHeight = window.screen.availHeight;
+  var mySwiper2 = new Swiper('#banner',{
+      visibilityFullFit : true,
+      direction: 'vertical',
+      autoHeight:true,
+      loopAdditionalSlides : 1,
+      touchMoveStopPropagation : false,
+      initialSlide:1,
+       slidesPerView: 'auto',
+      onSlideChangeEnd: function(swiper){
+        console.log(swiper.activeIndex);
+          //mySwiper1.clickedIndex 当前索引
+
+        $("#menu a").removeClass('active');
+        $("#menu a i").remove();
+        $("#menu a").eq(swiper.activeIndex).addClass('active');
+        $("#menu a").eq(swiper.activeIndex).append('<i></i>');
+        mySwiper1.slideTo( swiper.activeIndex-1); 
+         
+     },
+     onTouchStart:function(swiper){
+        var documentWidth = $(document).width();
+        var tabs =$("#topNav").width();
+        var xu = tabs - documentWidth;
+        $(".xuanfu_tiao").css("right",xu);
+        
+      }
+  });
+var startScroll, touchStart, touchCurrent;    
+swiper.slides.on('touchstart', function (e) {    
+    startScroll = this.scrollLeft;  
+    touchStart = e.targetTouches[0].pageX;  
+}, true);  
+swiper.slides.on('touchmove', function (e) {    
+    touchCurrent = e.targetTouches[0].pageX;  
+    var touchesDiff = touchCurrent - touchStart;  
+    var slide = this;  
+    var onlyScrolling =  
+            ( slide.scrollWidth > slide.offsetWidth ) && //allow only when slide is scrollable  
+            (  
+                ( touchesDiff < 0 && startScroll === 0 ) || //start from left edge to scroll right  
+                ( touchesDiff > 0 && startScroll === ( slide.scrollWidth - slide.offsetWidth ) ) || //start from right edge to scroll left  
+                ( startScroll > 0 && startScroll < ( slide.scrollWidth - slide.offsetWidth ) ) //start from the middle  
+            );  
+    if (onlyScrolling) {  
+        e.stopPropagation();  
+    }  
+}, true);  
+//   var mySwiper = new Swiper('#topNav', {
+//     freeMode: true,
+//     freeModeMomentumRatio: 0.5,
+//     slidesPerView: 'auto',
+
+// });
+
+// swiperWidth = mySwiper.container[0].clientWidth
+// maxTranslate = mySwiper.maxTranslate();
+// maxWidth = -maxTranslate + swiperWidth / 2
+
+// $(".swiper-container").on('touchstart', function(e) {
+//     e.preventDefault()
+// })
+
+// mySwiper.on('tap', function(swiper, e) {
+//     if (touchmove) {
+//         return;
+//     }
+//     e.preventDefault()
+
+//     slide = swiper.slides[swiper.clickedIndex]
+//     tabsSwiper.slideTo(swiper.clickedIndex)
+//     slideLeft = slide.offsetLeft
+//     slideWidth = slide.clientWidth
+//     slideCenter = slideLeft + slideWidth / 2
+//     // 被点击slide的中心点
+
+//     mySwiper.setWrapperTransition(300)
+
+//     if (slideCenter < swiperWidth / 2) {
+        
+//         mySwiper.setWrapperTranslate(0)
+
+//     } else if (slideCenter > maxWidth) {
+        
+//         mySwiper.setWrapperTranslate(maxTranslate)
+
+//     } else {
+
+//         nowTlanslate = slideCenter - swiperWidth / 2
+
+//         mySwiper.setWrapperTranslate(-nowTlanslate)
+
+//     }
+
+//     $("#topNav  .active").removeClass('active')
+
+//     $("#topNav .swiper-slide").eq(swiper.clickedIndex).addClass('active')
+
+// })
+
+
+  // var tabsSwiper = new Swiper('#tabs-container',{
+  //   speed:500,
+  //   onSlideChangeStart: function(){
+  //     $(".tabs .active").removeClass('active')
+  //     $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active')
+  //     slide = tabsSwiper.slides[tabsSwiper.activeIndex]
+  //       console.log(tabsSwiper.activeIndex + "a");
+  //   slideLeft = slide.offsetLeft
+  //   slideWidth = slide.clientWidth
+  //   slideCenter = slideLeft + slideWidth / 2
+  //   // 被点击slide的中心点
+  //   console.log(slideCenter);
+  //   mySwiper.setWrapperTransition(300)
+
+  //   if (slideCenter < swiperWidth / 2) {
+        
+  //       mySwiper.setWrapperTranslate(0)
+  //       console.log(1);
+
+  //   } else if (slideCenter > maxWidth) {
+        
+  //       mySwiper.setWrapperTranslate(maxTranslate)
+       
+
+  //   } else {
+
+  //       nowTlanslate = slideCenter - swiperWidth / 2
+
+  //       mySwiper.setWrapperTranslate(-nowTlanslate)
+  //       console.log(3);
+
+  //   }
+  //   }
+  // })
+
+  // $(".tabs a").click(function(e){
+  //   e.preventDefault()
+  // })
+  
+ 
+
+}
+
+    // var PageSlider = new PageSlider({
+    //     pages: $('#banner .swiper-slide'),
+    //     onchange: function(){
+    //         console.log(this.index)
+    //     }
+
+    // });
+
+
+
+
+
+$(function(){
+    $('.kok:first-child').addClass("active");
+    $('#l1').addClass("v")
+    // var width_1 = parseInt($(".over_food").length  * $(".over_food").outerWidth()) + parseInt($(".over_food").length * $(".over_food").css('marginRight').replace(/\px/g,''));
+    
+    // $('.over_buy .sf_buy').css("width",width_1);
+    // $(".swiper-slide").css('height','900px')
+})
+
+// document.getElementById("sous").addEventListener("keyup",function(){
+//     if(this.value.length>0)
+//     {
+//         $('.tiaoxing').hide();
+//         document.getElementById("cl").style.visibility="visible";
+//     }else{
+//         $('.tiaoxing').show();
+//        document.getElementById("cl").style.visibility="hidden"; 
+//     }
+     
+ 
+// });
+var j =0;
+//var time1,time2;
+// function isStop(){
+//     if ($('.foods_fc').is(":animated")) {
+//         j=1;
+//         time2 = window.setTimeout("isStop()",200);
+//     }else{
+//         j=0;
+//         clearTimeout(time2);
+//     }
+// }
+$(function(){
+    if($('.foods_fc').is(":animated")){
+        console.log(1);
+    }
+})
+var status = false;
+// 点击左侧滑动
+$('.kok').on("touchend",function(e) {
+    $('.foods_fc').off('scroll');
+    status = false;
+    $(this ).addClass("active").siblings().removeClass("active");
+    var n_index = $(this).attr("index");
+    var type =[];
+    $('.kok').each(function(){
+        type.push(n_index.replace(/\#/g,''));
+    });
+    $('.title').removeClass("v")
+    console.log(status);
+    $('.foods_fc').animate({scrollTop:$("#"+n_index.replace(/\#/g,'')).offset().top + $(".all_list").scrollTop() - $('.fc_head').height()},300);
+    e.preventDefault();
+    return;
+
+})
+$('.foods_fc').on('touchstart',function(){
+    $('.foods_fc').on("scroll",function(){
+    var type =[];
+    status =true;
+    console.log(status);
+        $('.kok').each(function(){
+            var n_index = $(this).attr("index");
+            type.push(n_index.replace(/\#/g,''));
+            // console.log($("#"+n_index.replace(/\#/g,'')).offset().top);
+            // console.log($(window).height() * 0.1)
+
+            if ($("#"+n_index.replace(/\#/g,'')).offset().top < $(window).height() * 0.1 ) {
+               $('.kok').removeClass('active');
+               $('#l'+n_index.replace(/\#/g,'')).addClass("active");
+               $(".title").removeClass("v");
+               // if (!$("#"+n_index.replace(/\#/g,'')).hasClass("v")) {
+                
+               // }else{
+               //  $("#"+n_index.replace(/\#/g,'')).css("position",'absolute')
+               // 
+               $("#"+n_index.replace(/\#/g,'')).addClass("v");
+            }
+
+        });
+    return;
+})
+})
+
+
+function search(){
+    var searchShop = $('#sous').val();
+    $('.gp_cha ul li').remove();
+    if (searchShop == '') {
+        $('.fc_menu').show();
+        $('.good-list').show();
+        $('.title').show();
+        $('.gp_cha').hide();
+        $('.nono').hide();
+    }else{
+       $(".good-list ul .k").each(function(){
+        var shop_name = $(this).find('.food_title').text();
+        $('.fc_menu').hide();
+        $('.good-list').hide();
+        $('.title').hide();
+        if (shop_name.indexOf(searchShop) != -1){
+            if ($(this).css("display") != "none") {
+                var d_pid = $(this).attr("data-pId");
+                var c_id = $(this).attr("data-cId");
+                var d_onprice = $(this).attr("data-onprice");
+                var d_price = $(this).attr("data-price");
+                var d_amount = $(this).attr("data-amount");
+                $('.gp_cha').show();
+                $('.gp_cha ul').prepend('<li class="food-item group_2" id="ko'+d_pid+'" data-pId ="'+d_pid+'" data-cId="'+c_id+'" data-onPrice="'+d_onprice+'" data-Price1="'+d_price+'" data-amount="'+d_amount+'">'+$(this).html()+'</li>');
+                }
+            }
+            if ($('.k:hidden').length == $('.k').length) {
+                    $('.nono').show();
+                }else{
+                    $('.nono').hide();
+            }
+        }) 
+    }
+}
+
+$('#sous').on('input', function() {
+    var str= navigator.userAgent.toLowerCase();
+    if (/iphone|ipad|ipod/.test(str)) {
+        var ver=str.match(/cpu iphone os (.*?) like mac os/);
+        var banben = parseFloat(ver[1].replace(/_/g,"."));
+        if (banben >= 10.3) {
+            //alert("ios");
+        }else{
+            //console.log("低版本ios")
+            if($(this).prop('comStart')) return;// 中文输入过程中不截断 
+        }          
+    } else if (/android/.test(str)) {
+            // alert("android")
+            if($(this).prop('comStart')) return;   
+    } 
+    
+    //    // 中文输入过程中不截断
+    search();      
+}).on('compositionstart', function(){
+    $(this).prop('comStart', true);
+    console.log("中文开始"+($(this).val()))
+}).on('compositionend', function(){
+    $(this).prop('comStart', false);
+});
+
+
+
+// 增加商品或者查找商品
+function ko_each(){
+    $(".good-list ul .k").each(function(){
+        if ($(this).find('.su').css("display") != "none") {
+            var d_pid = $(this).attr("data-pId");
+            var c_id = $(this).attr("data-cId");
+            var d_onprice = $(this).attr("data-onprice");
+            var d_price = $(this).attr("data-price");
+            var d_amount = $(this).attr("data-amount");
+            $('.group .group_content ul').prepend('<li class="food-item group_1" id="ko'+d_pid+'" data-pId ="'+d_pid+'" data-cId="'+c_id+'" data-onPrice="'+d_onprice+'" data-Price1="'+d_price+'" data-amount="'+d_amount+'">'+$(this).html()+'</li>');
+            
+        }
+
+    })
+
+}
+// 点击浮层
+$('.Layer').on('touchend',function(){
+    $('.bi').attr('id','sure');
+    $(".group").animate({bottom:"-4rem"},200);
+    $('.Layer').fadeOut(); 
+    setTimeout('$(".group .group_content ul .group_1").remove()',200);
+})
+// 点击购物车
+var count = 0;
+$(".bi").on("touchend",function(){
+    if (touchmove) {
+        return;
+    }
+
+    if($(this).attr('id') == 'sure'){
+        if(! $('.Layer ').is(":animated")){ 
+            //判断元素是否处于动画状态
+            if (! $('.group').is(":animated")) {
+                ko_each();
+                $(this).attr('id','');
+                $(".group").animate({bottom:"1rem"},200); 
+                $('.Layer').fadeIn();
+                var width_1 = parseInt($(".group_1").length  * $(".group .group_content ul .group_1").outerWidth() +5) + parseInt($(".group_1").length * $(".group_1").css('marginRight').replace(/\px/g,''));
+                
+                $(".group .group_content ul").css("width",width_1);
+                return false;
+            }
+        }
+    }else{
+       $(this).attr('id','sure');
+       $(".group").animate({bottom:"-4rem"},200);
+       //$('.ca_head').css('display','block');
+       $('.Layer').fadeOut();
+       setTimeout('$(".group .group_content ul .group_1").remove()',200);
+        
+    }
+})
+
+// $(document).on('touchstart','.food-item',(function(){
+//     //alert(1)
+//     if (! $(this).find(".su").is(":animated")){
+//     $(this).find(".su").css({
+//         width:'1.8rem',
+//         height:'1.8rem',
+//         left:'.32rem',
+//         top:'.45rem',
+//         },"fast");
+    
+//     }
+// }))
+//增加 
+$(document).on('tap','.food-item',(function(event){
+    if (touchmove) {
+        return;
+    }
+    event.preventDefault();
+    // if (! $(this).find(".su").is(":animated")){
+    //     $(this).find(".su").css({
+    //         width:'1.56rem',
+    //         height:'1.56rem',
+    //         left:'.3rem',
+    //         top:'.3rem',
+    //     },"fast").animate({
+    //         width:'1.48rem',
+    //         height:'1.48rem',
+    //         left:'.3rem',
+    //         top:'.3rem',
+    //     },200);
+    // }else{
+
+    // }
+    $(this).find(".s").show();
+    $(this).find(".su").css("animation-play-state","paused");
+    $(this).find(".su").css("animation","big .3s");
+    $(this).find(".su").css("animation-fill-mode","forwards");
+    $(this).find(".su").on("animationend", myStartFunction);
+    $(this).find(".food_pri .zhekou").show();
+    $(this).find(".su").show();
+    $(this).find(".food_icon").hide();
+    var se = $(this).find('.food_title').text();
+    if(se.length>8){
+        var swew = se.substring(0,4);
+        var r = se.substr(se.length-4);
+        var go ='';
+        go+=swew+'...'+r;
+        $(this).find(".food_title").text(go);
+    }
+    var amount = parseInt($(this).attr('data-amount')) + 1;
+    $(this).find(".num").text(amount);
+    $(this).attr('data-amount',amount);
+    var s = $(this).parent().parent().parent().parent().parent().parent();
+    $(s).find(".bianli_pay .number").css("display","block");
+    $(s).find(".bianli_pay .bianli_num").css("display","block");
+    $(s).find(".bianli_pay .cost_price").css("display","block");
+    $(s).find(".bianli_pay .shou_price").css("display","block");
+    // 购物车内点击
+    var p_id = $(this).attr('data-pId');
+    var amount = $(this).attr('data-amount');
+
+    if ($(".over_food").length != 0) {
+        $('.over_food').each(function(){
+               var pd2 = $(this).attr('data-pid');
+               if (pd2 == p_id) {
+                $(this).attr('data-amount',amount);
+                if (amount>0) {
+                    $(this).find(".su").show();
+                    $(this).find(".su").css("animation-play-state","paused");
+                    $(this).find(".su").css("animation","big .3s");
+                    $(this).find(".su").css("animation-fill-mode","forwards");
+                    $(this).find(".su").on("animationend", myStartFunction);
+                    $(this).find(".su .num").text(amount);
+                    $(this).find(".food_pri .zhekou").show();
+                }
+               } 
+        })
+    }
+    if ($(".group_1").length !=0 || $(".group_2").length !=0) {
+        //console.log(1);
+        $(".good-list ul .k").each(function(){
+        var pd = $(this).attr('data-pid');
+        if (p_id == pd) {
+            $(this).attr('data-amount',amount);
+            if (amount>0) {
+                $(this).find(".su").show();
+                $(this).find(".su").css("animation-play-state","paused");
+                $(this).find(".su").css("animation","big .3s");
+                $(this).find(".su").css("animation-fill-mode","forwards");
+                $(this).find(".su").on("animationend", myStartFunction);
+                $(this).find(".su .num").text(amount);
+                $(this).find(".food_pri .zhekou").show();
+                $(this).find(".food_icon").hide();
+                var se = $(this).find('.food_title').text();
+                if(se.length>8){
+                    var swew = se.substring(0,4);
+                    var r = se.substr(se.length-4);
+                    var go ='';
+                    go+=swew+'...'+r;
+                    $(this).find(".food_title").text(go);
+                }
+            }
+        }
+        if ($(".group_2").length !=0) {
+            console.log(2);
+            $('.gp_cha ul .group_2').each(function(){
+               var pd1 = $(this).attr('data-pid');
+               if (pd1 == p_id) {
+                $(this).attr('data-amount',amount);
+                if (amount>0) {
+                    $(this).find(".su").show();
+                    $(this).find(".su").css("animation-play-state","paused");
+                    $(this).find(".su").css("animation","big .3s");
+                    $(this).find(".su").css("animation-fill-mode","forwards");
+                    $(this).find(".su").on("animationend", myStartFunction);
+                    $(this).find(".su .num").text(amount);
+                    $(this).find(".food_pri .zhekou").show();
+                    $(this).find(".food_icon").hide();
+                    var se = $(this).find('.food_title').text();
+                    if(se.length>8){
+                        var swew = se.substring(0,4);
+                        var r = se.substr(se.length-4);
+                        var go ='';
+                        go+=swew+'...'+r;
+                        $(this).find(".food_title").text(go);
+                    }
+                }
+               } 
+            })
+        }
+
+        });
+        
+    }
+    
+    setTotal();
+    return false;
+}));
+// 减少
+$(document).on('touchend','.s',(function () {
+    if (touchmove) {
+        return;
+    }
+    $(this).hide();
+    $(this).parent().parent().find(".food_icon").show();
+    $(this).parent().css("animation","small .3s");
+    $(this).parent().parent().find(".food_pri .zhekou").hide();
+    $(this).parent().css("animation-play-state","running");
+    $(this).parent().on("animationend", myEndFunction);
+    var userAgent = navigator.userAgent;  
+    var index = userAgent.indexOf("Android")  
+    if(index >= 0){  
+        var androidVersion = parseFloat(userAgent.slice(index+8));   
+        if(androidVersion<5.2){   
+            $(this).parent().fadeOut();  
+        }
+    }
+    var yuanlai = $(this).siblings(".shop_tip").text();
+    yuanlai_o = $.trim(yuanlai);
+    $(this).parent().siblings(".food_title").text(yuanlai_o);
+    var parent = $(this).parent().parent();
+    var amount = parseInt($(parent).data('amount')) *0;
+    var chushi = parseInt($(parent).data('amount'));
+    $(this).siblings(".num").text(amount);
+    $(parent).attr('data-amount',amount);
+    var i = parseInt($('.bianli_pay .number').text());
+    i = i-chushi;
+    $('.bianli_pay .number').text(i);
+    var p_id = $(parent).attr('data-pId');
+
+    if ($(".over_food").length != 0) {
+        $('.over_food').each(function(){
+               var pd3 = $(this).attr('data-pid');
+               if (pd3 == p_id) {
+                $(this).attr('data-amount',amount);
+                if (amount == 0) {
+                    $(this).find(".su").css("animation","small .3s");
+                    $(this).find(".su").css("animation-play-state","running");
+                    $(this).find(".su").on("animationend", myEndFunction);
+                    $(this).find(".su .num").text(amount); 
+                }
+               } 
+        })
+    }
+    // 购物车内点击
+    if ($(".group_1").length !=0 || $(".group_2").length !=0) {
+        
+        $(".good-list ul .k").each(function(){
+        var pd = $(this).attr('data-pid');
+        if (p_id == pd) {
+            $(this).attr('data-amount',amount);
+            if (amount == 0) {
+                console.log(1);
+                $(this).find(".su").hide();
+                $(this).find(".su").css("animation","small .3s");
+                $(this).find(".su").css("animation-play-state","running");
+                $(this).find(".su").on("animationend", myEndFunction);
+                $(this).find(".su .num").text(amount);
+                $(this).find(".food_icon").show();
+                var yuanlai = $(this).find(".shop_tip").text();
+                yuanlai_o = $.trim(yuanlai);
+                $(this).find(".food_title").text(yuanlai_o);
+                $(this).find(".food_pri .zhekou").hide();
+            }
+        }
+        if ($(".group_2").length !=0) {
+
+            $('.gp_cha ul .group_2').each(function(){
+               var pd1 = $(this).attr('data-pid');
+               if (pd1 == p_id) {
+                $(this).attr('data-amount',amount);
+                if (amount == 0) {
+                    console.log(1);
+                    $(this).find(".su").css("animation","small .3s");
+                    $(this).find(".su").css("animation-play-state","running");
+                    $(this).find(".su").on("animationend", myEndFunction);
+                    $(this).find(".su .num").text(amount);
+                    $(this).parent().parent().find(".food_icon").show();
+                    $(this).parent().parent().find(".food_pri .zhekou").hide();
+                }
+               } 
+            })
+        }
+        })
+        if ($(".group_1").length !=0) {
+            $(this).parent().parent().fadeOut();
+        }
+        
+    }
+
+    setTotal();
+    return false;
+}));
+function stop(){
+    $(this).css("animation-play-state","paused")
+}
+function myEndFunction() {
+    this.style.display= "none";
+}
+function myStartFunction(){
+    $(this).show();
+    $(this).removeAttr("style");
+}
+//搜索下的取消
+$(".wo").on('touchend',function(e){
+    $('#sous').val('');
+    $(this).css('visibility','hidden');
+    document.activeElement.blur();
+    $('.fc_menu').show();
+    $('.good-list').show();
+    $('.gp_cha').hide();
+    $('.tiaoxing').show();
+    $('.title').show();
+    $('.nono').hide();
+    $('.gp_cha ul li').remove();
+    e.preventDefault();
+})
+
+// 清空
+$('.head_right').on("touchend",function(){
+    $.DialogByZ.Confirm({Title: "", Content: "确定清空吗？",FunL:confirmL,FunR:sure})
+    $(".L").css("color","#C7C7C7");
+    $(".zbox-popup").css("z-index","10022");
+    $(".zbox-popup").css("top","35%");
+    $(".zbox-popup-backdrop").css("z-index","10020");
+})
+function confirmL(){
+    $.DialogByZ.Close();
+}
+function sure(){
+    $.DialogByZ.Close();
+    $(".group").animate({bottom:"-4rem"},200);
+    $('.Layer').fadeOut();
+    $('.bi').attr('id','sure');
+    $(".group_1").remove();
+    $(".group_2").remove();
+    $(".k").attr('data-amount','0');
+    $(".k").find('.su .num').text(0);
+    $(".k").find('.su').hide();
+    $(".over_food").attr('data-amount','0');
+    $(".over_food").find('.su .num').text(0);
+    $(".over_food").find('.su').hide();
+    $('.bianli_pay .number').text(0);
+    $('.bianli_pay .bianli_num').hide();
+    $('.bianli_pay .cost_price').hide();
+    $('.bianli_pay .shou_price').hide();
+}
+
+
+// 常买的增加
+$(document).on('touchend','.over_food',(function(){
+    if (touchmove) {
+        return;
+    }
+    $(this).find(".sss").show();
+    $(this).find(".su").css("animation-play-state","paused");
+    $(this).find(".su").css("animation","big .3s");
+    $(this).find(".su").css("animation-fill-mode","forwards");
+    $(this).find(".su").on("animationend", myStartFunction);
+    $(this).find(".su").show();
+    var amount = parseInt($(this).attr('data-amount')) + 1;
+    $(this).find(".num").text(amount);
+    $(this).attr('data-amount',amount);
+    var s = $(this).parent().parent().parent().parent().parent().parent();
+    $(s).find(".bianli_pay .number").css("display","block");
+    $(s).find(".bianli_pay .bianli_num").css("display","block");
+    $(s).find(".bianli_pay .cost_price").css("display","block");
+    $(s).find(".bianli_pay .shou_price").css("display","block");
+    // 购物车内点击
+    var p_id = $(this).attr('data-pId');
+    var amount = $(this).attr('data-amount');
+        $(".good-list ul .k").each(function(){
+        var pd = $(this).attr('data-pid');
+        if (p_id == pd) {
+            $(this).attr('data-amount',amount);
+            if (amount>0) {
+                $(this).find(".su").show();
+                $(this).find(".s").show();
+                $(this).find(".su").css("animation-play-state","paused");
+                $(this).find(".su").css("animation","big .3s");
+                $(this).find(".su").css("animation-fill-mode","forwards");
+                $(this).find(".su").on("animationend", myStartFunction);
+                $(this).find(".su .num").text(amount);
+                $(this).find(".food_pri .zhekou").show();
+                $(this).find(".food_icon").hide();
+                var se = $(this).find('.food_title').text();
+                if(se.length>8){
+                    var swew = se.substring(0,4);
+                    var r = se.substr(se.length-4);
+                    var go ='';
+                    go+=swew+'...'+r;
+                    $(this).find(".food_title").text(go);
+                }
+            }
+        }
+
+        });
+    
+    setTotal();
+    return false;
+
+}));
+
+// 常买的减少
+$(document).on('touchend','.sss',(function(){
+    if (touchmove) {
+        return;
+    }
+    $(this).hide();
+    $(this).parent().css("animation","small .3s");
+    $(this).parent().parent().find(".food_pri .zhekou").hide();
+    $(this).parent().css("animation-play-state","running");
+    $(this).parent().on("animationend", myEndFunction);
+    var userAgent = navigator.userAgent;  
+    var index = userAgent.indexOf("Android")  
+    if(index >= 0){  
+        var androidVersion = parseFloat(userAgent.slice(index+8));   
+        if(androidVersion<5.2){   
+            $(this).parent().fadeOut();  
+        }
+    }
+    var yuanlai = $(this).siblings(".shop_tip").text();
+    yuanlai_o = $.trim(yuanlai);
+    $(this).parent().siblings(".food_title").text(yuanlai_o);
+    var parent = $(this).parent().parent();
+    var amount = parseInt($(parent).data('amount')) *0;
+    var chushi = parseInt($(parent).data('amount'));
+    $(this).siblings(".num").text(amount);
+    $(parent).attr('data-amount',amount);
+    var i = parseInt($('.bianli_pay .number').text());
+    i = i-chushi;
+    var p_id = $(parent).attr('data-pId');
+    $(".good-list ul .k").each(function(){
+        var pd = $(this).attr('data-pid');
+        if (p_id == pd) {
+            $(this).attr('data-amount',amount);
+            if (amount==0) {
+                $(this).find(".su").css("animation","small .3s");
+                $(this).find(".su").css("animation-play-state","running");
+                $(this).find(".su").on("animationend", myEndFunction);
+                $(this).find(".su .num").text(amount);
+                var yuanlai = $(this).find(".shop_tip").text();
+                yuanlai_o = $.trim(yuanlai);
+                $(this).find(".food_title").text(yuanlai_o);
+                $(this).find(".food_pri .zhekou").hide();
+            }
+        }
+
+    });
+    setTotal();
+    return false;
+}));
+
+
+// 图片放大功能
+var documentWidth = $(document).width();
+var documentHeight = window.screen.availHeight
+$('.Layer1').width(documentWidth);
+$('.Layer1').height(documentHeight);
+$('.imgFull').width(documentWidth);
+$('.imgFull').height(documentWidth);
+$('.imgFull img.su').width(documentWidth);
+$('.imgFull img.su').height(documentWidth);
+$('.food_icon').on("touchend",function(){
+    if (touchmove) {
+        return;
+    }
+    $('.Layer').on("touchmove",function(){
+        return false;
+    });
+    $('.imgFull').on("touchmove",function(){
+        return false;
+    });
+    // 判断屏幕目前的位置
+    if (window.orientation == 90 || window.orientation == -90) {
+        return false;
+    }
+    $('.Layer1').show();
+   
+    $('.imgFull').fadeIn(300);
+    var goodName = $(this).parent().siblings('.food_title').text();
+    var j_price = $(this).parent().siblings('.food_pri').find('.fei').text();
+    var imgsrc = $(this).parent().attr('data-img');
+    var icon = $(this).parent().siblings('.icon').attr('src');
+    $('.imgFull img').attr('src', imgsrc);
+    $('#name_1').show();
+    $('#name_1').text(goodName);
+    $('.da_price').show();
+    $('.da_price').text(j_price);
+    $('.Layer1').css("z-index","10022");
+    return false;
+});
+$('.imgFull').on('touchend',function(){
+    if (touchmove) {
+        return;
+    }
+    $('.Layer1').fadeOut();
+    $('.imgFull').hide();
+    $('.da_price').hide();
+    $('#name_1').hide();
+    $('.Layer1').css("z-index","10020");
+
+});
+$('.Layer1').on('touchend',function(){
+    if (touchmove) {
+        return;
+    }
+    $('.Layer1').fadeOut();
+    $('.imgFull').hide();
+    $('.da_price').hide();
+    $('#name_1').hide();
+    $('.butie').animate({bottom:"-4.7rem"},200);
+    $('.Layer1').css("z-index","10020");
+
+});
+
+function formatMoney(num) {
+        var money = num/100;
+        var float = num%100;
+        if(float == 0){
+            money = money + ".00";
+        }
+        return money;
+}
+
+//点击搜索框
+$('.sousuo').on('touchend',function(){
+    $('.tx_tip').fadeIn();
+    setTimeout('$(".tx_tip").fadeOut()',5000);
+})
+var xiao=[
+    {
+        "id": 2,
+        "categoryId": 24,
+        "itemName": "EDO苏打饼干",
+        "imgPath": "http://assets.lingwa.com.cn/images/item/b2d09760-60ae-4485-8110-e71bd4072872.jpg",
+        "bigimg": "http://assets.lingwa.com.cn/images/item/d8cde81d-4fcd-4eff-90f3-f6a46a1c6d32.jpg",
+        "costPrice": 70,
+        "profit": 30,
+        "salePrice": 100,
+        "saleSizeNum": 1,
+        "saleCostPrice": 70,
+        "index":"l2",
+    }
+]
+// <li class="food-item k sm_j" data-pid="1" data-cid="24" data-onprice="2.70" data-price="3.00" data-amount="0">
+//             <img src="http://assets.lingwa.com.cn/images/item/acafc64e-1d18-4e0c-a2a1-dc2bfb98c21d.jpg">
+//             <span class="food_pri">￥<span class="fei">3.00</span></span>
+//             <p class="food_title">清风纸巾</p>
+//             <div class="su">
+//                 <img src="static/images/sm_close.png" class="s">
+//                 <p class="num">0</p>
+//                 <p class="shop_price" style="display: none;">￥<span>4.80</span></p>
+//             </div>
+//         </li>
+//点击条形码
+$('.tiaoxing').on('touchend',function(){
+    $('.tx_tip').fadeIn();
+    // 扫码有商品
+    setTimeout('$(".tx_tip").fadeOut()',5000);
+    var html ='';
+    $('.sm_jie ul').fadeIn();
+    $(".Layer2").fadeIn();
+    $(".sm_jie").show();
+    // 扫码出来的结构
+    html+='<li class="food-item sm_j" data-pid="'+xiao[0].id+'" data-cId="'+xiao[0].categoryId+'" data-onPrice="'+formatMoney(xiao[0].costPrice)+'" data-price="'+formatMoney(xiao[0].salePrice)+'" data-amount ="1"><img src="'+xiao[0].imgPath+'"><span class="food_pri">￥<span class="fei">'+formatMoney(xiao[0].costPrice)+'</span></span><p class="food_title">'+xiao[0].itemName+'</p><div class="su"><img src="static/images/sm_close.png" class="sp"><p class="num">1</p><p class="shop_price" style="display: none;">￥<span>'+formatMoney(xiao[0].salePrice)+'</span></p></div></li>';
+    $(html).insertBefore('.sm_go');
+
+
+    // 如果扫码没有这个商品提示
+    // $.DialogByZ.Alert({Title: "", Content: "不好意思，暂时没有这个商品哦",BtnL:"知道了",FunL:confirmL});
+    // $(".zbox-popup").css("z-index","10022");
+    // $('.zbox-popup-backdrop').css("opacity",".4")
+    // $(".zbox-popup-backdrop").css("z-index","10022");
+    
+})
+//点击条形码提示
+$('.tx_tip').on('touchend',function(){
+    $('.tx_tip').fadeOut();
+})
+//扫码确定
+$('.sm_sure').on('touchend',function(){
+    if (touchmove) {
+        return;
+    }
+    var html1 ='';
+    $(".Layer2").fadeOut();
+    $(".sm_jie").fadeOut();
+    var in_index = xiao[0].index;
+    var kko =$('.sm_j').attr("data-amount");
+    console.log(kko);
+    html1+='<li class="food-item k" data-pid="'+xiao[0].id+'" data-cId="'+xiao[0].categoryId+'" data-onPrice="'+formatMoney(xiao[0].costPrice)+'" data-price="'+formatMoney(xiao[0].salePrice)+'" data-amount ="'+kko+'"><img src="'+xiao[0].imgPath+'" class="food_img"><span data-img="'+xiao[0].bigimg+'"><img src="static/images/so_so.png" class="food_icon" style="display:none"></span><span class="food_pri">￥<span class="fei">'+formatMoney(xiao[0].costPrice)+'</span><span class="zhekou">￥'+formatMoney(xiao[0].salePrice)+'</span></span><p class="food_title">'+xiao[0].itemName+'</p><div class="su" style="display:block"><img src="static/images/close.png" class="s"><p class="num">'+kko+'</p><p class="shop_price" style="display: none;">￥<span>'+formatMoney(xiao[0].salePrice)+'</span></p></div></li>';
+    var ju= true;
+    $(".good-list ul .k").each(function(){
+        var ppd = parseInt($(this).attr('data-pid'));
+        if (ppd == xiao[0].id) {
+            ju = false;
+            var amoo = parseInt($(this).attr('data-amount'))+parseInt($('.sm_j').attr('data-amount'));
+            $(this).attr('data-amount',amoo);
+            $(this).find('.su').show();
+            $(this).find('.su .num').text(amoo);
+        }
+        
+    });
+    if (ju == true) {
+
+        $("#"+in_index).siblings("ul").append(html1);
+    } 
+    $(".bianli_pay .number").show();
+    $(".bianli_num").show();
+    $(".cost_price").show();
+    $(".shou_price").show();
+
+    setTotal();
+    return false
+})
+//扫码取消
+$(document).on('touchend','.sp',(function(){
+    $('.sm_j').remove();
+    $(".Layer2").fadeOut();
+    $(".sm_jie").fadeOut();
+    $('.sm_cz').hide();
+}))
+
+function setTotal() {
+  var sum = 0.00;
+  var cost = 0.00;
+  var su = 0.00;
+  var num = 0;
+  $(".k").each(function(){ 
+    num+=parseInt($(this).find(".num").text());
+    sum+=parseInt($(this).find(".num").text()) * parseFloat($(this).find('.food_pri .fei').text());
+    cost+=parseInt($(this).find(".num").text()) * parseFloat($(this).find('.shop_price span').text());
+    su = cost - sum;
+
+});
+  // console.log(num);
+  $(".bianli_pay .number").text(num);
+  $(".bianli_num span").html(sum.toFixed(2));
+  $(".cost_price span").html(cost.toFixed(2));
+  $(".shou_price span").html(su.toFixed(2));
+} 
+   
+// 支付
+$(".pay").on('touchend',function() {
+    if (touchmove) {
+        return;
+    }
+    var li = $(".k");
+    var now = new Array();
+    for (var i=0; i<li.length; i++) {
+        var s = li[i];
+        var id = $(li[i]).attr("data-pId");
+        var amount = $(li[i]).attr("data-amount");
+        var arr = {};
+        arr["id"] = id;
+        arr["amount"] = amount;
+        if (amount>0) {
+            now.push(arr);
+        }
+    }
+    console.log(JSON.stringify(now));
+});    
+</script>
+</body>
 </html>

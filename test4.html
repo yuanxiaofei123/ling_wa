@@ -23,7 +23,7 @@
 
 </head>
 <body style="background:#fff;">
-    <div class="push_content">
+    <div class="push_content" style="width: 100%;">
         <div class="search">
         <form  name="itemForm" id="form" action="" method="get">
             <input type="text" name="itemName" placeholder="请输入商品名" id="sec">
@@ -421,7 +421,8 @@ function formatMoney(num) {
  window.onscroll = function(){  
     if (Math.abs($(document).scrollTop() >= $(document).height()-$(window).height())) { if(!hasNextPage){
                 return;
-            }     
+            }    
+            alert(1); 
         $("#load").css("display","block");
         //document.body.scrollTop = document.body.scrollHeight;
         // if (document.body.scrollTop = document.body.scrollHeight) {

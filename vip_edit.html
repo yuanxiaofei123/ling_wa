@@ -40,10 +40,19 @@
             </li>
         </ul>
         <p style="text-align:left;padding-left:3%;margin:.2rem 0 .4rem;">在设定的时间开始自动打折。</p>
-        <div class="discount">
-            <span>开始时间：</span>
-            <input type="" name="" placeholder="金额" id="money">
-        </div>
+        <ul>
+            <li>
+                <span>补贴金额：</span>
+                <input type="" name=""  id="freeFee" value="">
+            </li>
+            <li>
+                <span>周期设定：</span>
+                <select id="dayOrMonth">
+                    <option value="1" selected="selected">每月</option>
+                    <option value="2" >每日</option>
+                </select>
+            </li>
+        </ul>
         <p style="width:94%;margin:.2rem auto 0.5rem;text-align:left;">本月截至2016-7-15亏损为￥253.33，当亏损超过止损金额，次日自动取消折扣。</p>
         <div class="show_check">
             <span>购买时显示市场价：</span>
@@ -51,6 +60,13 @@
         </div>
         <p style="width:94%;margin:.2rem auto 0.5rem;text-align:left;">
             当大部分商品销售价定价较高，超过市场价时，建议取消显示市场价
+        </p>
+        <div class="show_check">
+            <span>商品展示形式显示分层：</span>
+            <input type="checkbox" name="" checked>
+        </div>
+        <p style="width:94%;margin:.2rem auto 0.5rem;text-align:left;">
+             进入【在售商品】中操作，若未建立货架层级信息，请先到【在售商品】中建立层，放置商品
         </p>
         <a href="" style="margin-bottom:0;" class="save">保存</a>
         <p>请在领哇客服的协助下设置</p>

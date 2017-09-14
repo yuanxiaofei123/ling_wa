@@ -16,9 +16,11 @@
     <meta name="x5-orientation" content="portrait">
     <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all"> 
     <link rel="stylesheet" type="text/css" href="./static/css/lingwa.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./static/css/tanchu.css" media="all">
     <link href="" rel="apple-touch-icon-precomposed">
     <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="./static/js/rem.js"></script>
+    <script type="text/javascript" src="./static/js/tanchu.js"></script>
 </head>
 <body>
     <div class="order_details">
@@ -28,31 +30,46 @@
             <p>备注：<span>具体的备注文字</span></p>
         </div>
         <ul>
-            <li>
-                <img src="static/images/hou.jpg">
-                <p class="li_tips">红牛</p>
-                <p class="li_price">￥3.00</p>
-                <p class="li_spec">355ml/听</p>
-                <div class="li_num">98</div>
+            <li class="xiaofei_d1">
+                <img src="static/images/hou.jpg" class="xiaofei_d2">
+                <p class="li_tips xiaofei_d3">伊利黄桃发酵乳酸酸酸我的你的额</p>
+                <p class="li_price xiaofei_d4">
+                    <span style="font-size: .3rem;">￥3.00</span>
+                    <span style="font-size: .26rem;color: #9B9B9B;margin-left: .2rem;" class="">355ml/听</span>
+                </p>
+                <p class="li_spec xiaofei_d5">数量：<span style="color: #FF3E23">23</span>  </p>
+                <div class="li_num xiaofei_d6" data-id="10">
+                    <select style="width: 1.3rem;margin-top: .665rem;overflow: hidden;">
+                        <option value="">选择层</option>
+                        <option value="1" selected="">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
             </li>
-            <li>
-                <img src="static/images/hou.jpg">
-                <p class="li_tips">红牛</p>
-                <p class="li_price">￥3.00</p>
-                <p class="li_spec">355ml/听</p>
-                <div class="li_num">9</div>
-            </li>
-            <li>
-                <img src="static/images/hou.jpg">
-                <p class="li_tips">红牛</p>
-                <p class="li_price">￥3.00</p>
-                <p class="li_spec">355ml/听</p>
-                <div class="li_num">98</div>
+            <li class="xiaofei_d1">
+                <img src="static/images/hou.jpg" class="xiaofei_d2">
+                <p class="li_tips xiaofei_d3">伊利黄桃发酵乳酸酸酸</p>
+                <p class="li_price xiaofei_d4">
+                    <span style="font-size: .3rem;">￥3.00</span>
+                    <span style="font-size: .26rem;color: #9B9B9B;margin-left: .2rem;">355ml/听</span>
+                </p>
+                <p class="li_spec xiaofei_d5">数量：<span style="color: #FF3E23">23</span>  </p>
+                <div class="li_num xiaofei_d6" data-id="11">
+                    <select style="width: 1.3rem;margin-top: .665rem;overflow: hidden;">
+                        <option value="">选择层</option>
+                        <option value="1" >1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
             </li>
         </ul>
 
         <a href="" data-id="456" data-shop="789" class="order_push">上架</a>
-        <a href="javascript:void(0);" data-id="222" data-shop="333" class="order_over">不上架</a>
+        <a href="javascript:void(0);" data-id="222" data-shop="333" class="order_over">完成（无需上架）</a>
     </div>
 </body>
 </html>
@@ -60,6 +77,30 @@
     document.title = "采购订单详情";
     //点击次数
     var count =0;
+
+    $(".order_push").on("touchend",function () {
+        var map = {};
+            $(".li_num").each(function(){
+                if ($(this).find("select").val() == "") {
+                    $.DialogByZ.Alert({Title: "", Content: "请先选择商品属于哪一层",BtnL:"知道了",FunL:confirmL});
+                    return;
+                }else{
+                    var op = $(this).find("select").val();
+                    var data_i = $(this).attr("data-id");
+                    var has = data_i in map;//判断数据是否在里面
+                    if(!has){
+                        map[data_i] = op;
+                    }
+                }
+
+            })
+            console.log(JSON.stringify(map));
+
+
+    });
+    function confirmL(){
+        $.DialogByZ.Close();
+    }
     $(".order_over").on("touchend",function(event){
         var wen = $(this).text();
         if (count<2) {
@@ -76,40 +117,3 @@
         
     });
 </script>
-var count =0;
-$('.xiang').on("touchend",function(){
-    count++;
-    var xiangyin = $(this).attr("gouwu");
-    if ($('.n').css("z-index") == 1000) {
-        $('.n').animate({top:'.3rem'});
-        $('.n').css("z-index","-1");
-        document.activeElement.blur();
-    }
-    if (count%2 ==0) {
-        $('#sec').val("");
-        $('#sec').animate({"background-position":"47%"});
-        $('.sou').css('display','block');
-        $('.sou').animate({left:"50%"});
-        $('.wo').css('visibility','hidden');
-        $("ul li").show();
-        console.log("双数");
-    }else{
-        $('#sec').val(xiangyin);
-        $('#sec').animate({"background-position":'.2rem'},200);
-        $('#sec').siblings('.sou').animate({left:"11%"});
-        $('.sou').css('display','none');
-        $('.wo').css('visibility','visible');
-        $(".wo").on("touchend",function(){
-            count--;
-            console.log(count);
-        });
-        $("div.su").each(function(){
-            if ($(this).is(":hidden")) {
-                $(this).parent().hide();
-            }else{
-                $(this).parent().show();
-            }
-        });
-        console.log("单数");
-    }
-});

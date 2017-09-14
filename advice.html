@@ -1,34 +1,93 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>便利店测试</title>
-    <meta name="baidu-site-verification" content="4vNEpUr1Eg" />
-    <meta name="keywords" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
-    <meta name="description" content="领蛙,领带蛙,杭州领带蛙网络科技有限公司,智能优选零食,零食,领蛙零食,企业文化"/>
-    <!--允许全屏-->
-    <meta content="yes" name="apple-mobile-web-app-capable" />
-    <meta content="yes" name="apple-touch-fullscreen" />
-    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="grey"/>
-    <meta name="screen-orientation" content="portrait">
-    <meta name="x5-orientation" content="portrait">
-    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all"> 
-    <link rel="stylesheet" type="text/css" href="./static/css/lingwa.css" media="all">
-    <link href="" rel="apple-touch-icon-precomposed">
-    <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="./static/js/rem.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>CSS3 圆环Loading动画</title>
+<style>
+#bowlG{
+position:relative;
+width:128px;
+height:128px;
+}
+#bowl_ringG{
+position:absolute;
+width:128px;
+height:128px;
+border:11px solid #000000;
+-moz-border-radius:128px;
+-webkit-border-radius:128px;
+border-radius:128px;
+}
+.ball_holderG{
+position:absolute;
+width:34px;
+height:128px;
+left:47px;
+top:0px;
+-webkit-animation-name:ball_moveG;
+-webkit-animation-duration:2s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-timing-function:linear;
+-moz-animation-name:ball_moveG;
+-moz-animation-duration:2s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-timing-function:linear;
+-o-animation-name:ball_moveG;
+-o-animation-duration:2s;
+-o-animation-iteration-count:infinite;
+-o-animation-timing-function:linear;
+-ms-animation-name:ball_moveG;
+-ms-animation-duration:2s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-timing-function:linear;
+}
+.ballG{
+position:absolute;
+left:0px;
+top:-30px;
+width:51px;
+height:51px;
+background:#FFFFFF;
+-moz-border-radius:43px;
+-webkit-border-radius:43px;
+border-radius:43px;
+}
+@-webkit-keyframes ball_moveG{
+0%{
+-webkit-transform:rotate(0deg)}
+100%{
+-webkit-transform:rotate(360deg)}
+}
+@-moz-keyframes ball_moveG{
+0%{
+-moz-transform:rotate(0deg)}
+100%{
+-moz-transform:rotate(360deg)}
+}
+@-o-keyframes ball_moveG{
+0%{
+-o-transform:rotate(0deg)}
+100%{
+-o-transform:rotate(360deg)}
+}
+@-ms-keyframes ball_moveG{
+0%{
+-ms-transform:rotate(0deg)}
+100%{
+-ms-transform:rotate(360deg)}
+}
+</style>
 </head>
+
+
 <body>
-  <div class="advice">
-    <p>咨询开通办公室自助便利店</p>
-    <a href="tel://4001-520-027">4001-520-027</a>
-    <span>如已开通便利店，请联系店铺管理员开通管理权限</span>
-  </div>
-   
+<div><A href="http://www.999jiujiu.com/">http://www.999jiujiu.com/</A></div>
+<div id="bowlG">
+<div id="bowl_ringG">
+<div class="ball_holderG">
+<div class="ballG"></div>
+</div>
+</div>
+</div>
 </body>
 </html>
-<script type="text/javascript">
-    document.title = "管理后台";
-</script>

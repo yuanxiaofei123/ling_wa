@@ -15,730 +15,1038 @@
     <meta name="screen-orientation" content="portrait">
     <meta name="x5-orientation" content="portrait">
     <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="./static/css/fenceng.css" media="all">
     <link rel="stylesheet" type="text/css" href="./static/css/lingwa.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./static/css/tanchu.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./static/css/swiper.css" media="all">
     <link href="" rel="apple-touch-icon-precomposed">
     <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./static/js/tanchu.js"></script>
 </head>
+<style>
+    .zs_add{
+        margin-bottom: 1.1rem;
+    }
+</style>
 <body style="background:#fff;">
-    <div class="push_content">
-        <ul>
-            <li>
-            <div style="float:left;width:80%;" class="dianji">
-                <img data-original="static/images/hou.jpg" class="xiaofei" src="static/images/blank.png">
-                <div class="new_show">
-                    <p class="shop_name">红牛1</p>
-                    <p style="padding-left: 0.18rem;">
-                        <span class="shop_money">￥<span>6.00</span></span>
-                        <span class="price_01">采购价</span>
-                        <span class="price_02">￥<span>3.00</span></span>
-                        <span class="price_01">售价</span>
-                        <span class="price_02">￥<span>2.00</span></span>
-                    </p>
-                    <p class="spec">
-                    422ml/听
-                    <!-- 滞销 -->
-                    <span class="zhixiao" >周消费<span class="week_o">1</span></span>
-                    </p>
-                </div>
-            </div>
-                
-                <div class="push_right">
-                    <p class="num">1</p>
-                    <a href="javascript:" class="off" id="1" onclick="push(this);">
-                        下架
-                    </a>
-                </div>
-                
-                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
-                    <div class="liebiao">
-                        <img src="static/images/hong.jpg">
-                        <div class="shuzi">
-                            <p class="shop_name"></p>
-                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
-                                    <span class="shop_money">￥<span></span></span>
-                                    <span class="price_01">采购价</span>
-                                    <span class="ye">￥<span></span></span>
-                            </p>
-                            <p class="spec"></p>
-                        </div>
-                        <span class="quxiao" id="close"  >
-                            x
-                        </span>
-                    </div>
-                    <div class="shuru1">
-                        <span>售价：</span>
-                        <input type="" name="cost" value="1.50">
-                    </div>
-                    <div class="shuru1">
-                        <span>数量：</span>
-                        <input type="" name="number" value="2">
-                    </div>
-                    <div class="butt" data-id="13">
-                        <a href="javascript:" class="save">保存</a>
-                        <a href="javascript:" class="push">下架</a>
-                    </div>
-                
-                </div>
-            </li>
-            <li>
-                <div style="float:left;width:80%;" class="dianji">
-                    <img data-original="static/images/one_1.jpg" class="xiaofei">
-                    <div class="new_show">
-                        <p class="shop_name">红牛1</p>
-                        <p style="padding-left: 0.18rem;">
-                            <span class="shop_money">￥<span>6.00</span></span>
-                            <span class="price_01">采购价</span>
-                            <span class="price_02">￥<span>3.00</span></span>
-                            <span class="price_01">售价</span>
-                            <span class="price_02">￥<span>2.00</span></span>
-                        </p>
-                        <p class="spec">422ml/听 <span class="zhixiao" >周消费<span class="week_o">12</span></span></p>
-                    </div>
-                </div>
-                <div class="push_right">
-                    <p class="num">98</p>
-                    <a href="javascript:" class="off" id="2" onclick="push(this);">
-                        下架
-                    </a>
-                </div>
-                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
-                    <div class="liebiao">
-                        <img src="static/images/hong.jpg">
-                        <div class="shuzi">
-                            <p class="shop_name"></p>
-                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
-                                    <span class="shop_money">￥<span></span></span>
-                                    <span class="price_01">采购价</span>
-                                    <span class="ye">￥<span></span></span>
-                            </p>
-                            <p class="spec"></p>
-                        </div>
-                        <span class="quxiao" id="close"  >
-                            x
-                        </span>
-                    </div>
-                    <div class="shuru1">
-                        <span>售价：</span>
-                        <input type="" name="cost" value="1.50" >
-                    </div>
-                    <div class="shuru1">
-                        <span>数量：</span>
-                        <input type="" name="number" value="2" >
-                    </div>
-                    <div class="butt">
-                        <a href="javascript:" class="save">保存</a>
-                        <a href="javascript:" class="push">下架</a>
-                    </div>
-                
-                </div>
+    <ul class="zaishou_left">
+        <li class="a active" index="1">第一层</li>
+                <li class="a" index="2">第二层</li>
+                <li class="a" index="3">第三层</li>
+                <li class="a" index="52">第四层</li>
+                <li class="a" index="53">第五层</li>
+                <li class="a" index="61">冰箱</li>
+                <li class="a" index="61">冰箱</li>
+                <li class="a" index="61">冰箱</li>
+                <li class="a" index="61">冰箱</li>
+                <li class="a" index="61">冰箱</li>
+<div class="zs_add">
+<img src="./static/images/zs_add.png">
+</div>
+</ul>
 
-            </li>
-            <li>
-                <div style="float:left;width:80%;" class="dianji">
-                    <img data-original="static/images/one_2.jpg" class="xiaofei">
-                    <div class="new_show">
-                        <p class="shop_name">红牛1</p>
-                        <p style="padding-left: 0.18rem;">
-                            <span class="shop_money">￥<span>6.00</span></span>
-                            <span class="price_01">采购价</span>
-                            <span class="price_02">￥<span>3.00</span></span>
-                            <span class="price_01">售价</span>
-                            <span class="price_02">￥<span>2.00</span></span>
-                        </p>
-                        <p class="spec">422ml/听
-                        <span class="week_red">滞销</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="push_right">
-                    <p class="num">98</p>
-                    <a href="javascript:" class="off" id="3" onclick="push(this);">
-                        下架
-                    </a>
-                </div>
-                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
-                    <div class="liebiao">
-                        <img src="static/images/hong.jpg">
-                        <div class="shuzi">
-                            <p class="shop_name"></p>
-                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
-                                    <span class="shop_money">￥<span></span></span>
-                                    <span class="price_01">采购价</span>
-                                    <span class="ye">￥<span></span></span>
-                            </p>
-                            <p class="spec"></p>
-                        </div>
-                        <span class="quxiao" id="close" >
-                            x
-                        </span>
-                    </div>
-                    <div class="shuru1">
-                        <span>售价：</span>
-                        <input type="" name="cost" value="1.50" >
-                    </div>
-                    <div class="shuru1">
-                        <span>数量：</span>
-                        <input type="" name="number" value="2">
-                    </div>
-                    <div class="butt">
-                        <a href="javascript:" class="save">保存</a>
-                        <a href="javascript:" class="push">下架</a>
-                    </div>
-                
-                </div>
-            </li>
-            <li>
-                <div style="float:left;width:80%;" class="dianji">
-                    <img data-original="static/images/one_3.jpg" class="xiaofei">
-                    <div class="new_show">
-                        <p class="shop_name">红牛1</p>
-                        <p style="padding-left: 0.18rem;">
-                            <span class="shop_money">￥<span>6.00</span></span>
-                            <span class="price_01">采购价</span>
-                            <span class="price_02">￥<span>3.00</span></span>
-                            <span class="price_01">售价</span>
-                            <span class="price_02">￥<span>2.00</span></span>
-                        </p>
-                        <p class="spec">422ml/听</p>
-                    </div>
-                </div>
-                <div class="push_right">
-                    <p class="num">98</p>
-                    <a href="javascript:" class="off">
-                        下架
-                    </a>
-                </div>
-                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
-                    <div class="liebiao">
-                        <img src="static/images/hong.jpg">
-                        <div class="shuzi">
-                            <p class="shop_name"></p>
-                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
-                                    <span class="shop_money">￥<span></span></span>
-                                    <span class="price_01">采购价</span>
-                                    <span class="ye">￥<span></span></span>
-                            </p>
-                            <p class="spec"></p>
-                        </div>
-                        <span class="quxiao" id="close" >
-                            x
-                        </span>
-                    </div>
-                    <div class="shuru1">
-                        <span>售价：</span>
-                        <input type="" name="cost" value="1.50">
-                    </div>
-                    <div class="shuru1">
-                        <span>数量：</span>
-                        <input type="" name="number" value="2">
-                    </div>
-                    <div class="butt">
-                        <a href="javascript:" class="save">保存</a>
-                        <a href="javascript:" class="push">下架</a>
-                    </div>
-                
-                </div>
-            </li>
-            <li>
-                <div style="float:left;width:80%;" class="dianji">
-                    <img data-original="static/images/one_4.jpg" class="xiaofei">
-                    <div class="new_show">
-                        <p class="shop_name">红牛1</p>
-                        <p style="padding-left: 0.18rem;">
-                            <span class="shop_money">￥<span>6.00</span></span>
-                            <span class="price_01">采购价</span>
-                            <span class="price_02">￥<span>3.00</span></span>
-                            <span class="price_01">售价</span>
-                            <span class="price_02">￥<span>2.00</span></span>
-                        </p>
-                        <p class="spec">422ml/听 <span class="week_now">新品</span></p>
-                    </div>
-                </div>
-                <div class="push_right">
-                    <p class="num">98</p>
-                    <a href="javascript:" class="off">
-                        下架
-                    </a>
-                </div>
-                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
-                    <div class="liebiao">
-                        <img src="static/images/hong.jpg">
-                        <div class="shuzi">
-                            <p class="shop_name"></p>
-                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
-                                    <span class="shop_money">￥<span></span></span>
-                                    <span class="price_01">采购价</span>
-                                    <span class="ye">￥<span></span></span>
-                            </p>
-                            <p class="spec"></p>
-                        </div>
-                        <span class="quxiao" id="close" >
-                            x
-                        </span>
-                    </div>
-                    <div class="shuru1">
-                        <span>售价：</span>
-                        <input type="" name="cost" value="1.50">
-                    </div>
-                    <div class="shuru1">
-                        <span>数量：</span>
-                        <input type="" name="number" value="2">
-                    </div>
-                    <div class="butt">
-                        <a href="javascript:" class="save">保存</a>
-                        <a href="javascript:" class="push">下架</a>
-                    </div>
-                
-                </div>
-            </li>
-            <li>
-               <div style="float:left;width:80%;" class="dianji">
-                    <img data-original="static/images/one_5.jpg" class="xiaofei">
-                    <div class="new_show">
-                        <p class="shop_name">红牛1</p>
-                        <p style="padding-left: 0.18rem;">
-                            <span class="shop_money">￥<span>6.00</span></span>
-                            <span class="price_01">采购价</span>
-                            <span class="price_02">￥<span>3.00</span></span>
-                            <span class="price_01">售价</span>
-                            <span class="price_02">￥<span>2.00</span></span>
-                        </p>
-                        <p class="spec">422ml/听</p>
-                    </div>
-                </div>
-                <div class="push_right">
-                    <p class="num">98</p>
-                    <a href="javascript:" class="off">
-                        下架
-                    </a>
-                </div>
-                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
-                    <div class="liebiao">
-                        <img src="static/images/hong.jpg">
-                        <div class="shuzi">
-                            <p class="shop_name"></p>
-                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
-                                    <span class="shop_money">￥<span></span></span>
-                                    <span class="price_01">采购价</span>
-                                    <span class="ye">￥<span></span></span>
-                            </p>
-                            <p class="spec"></p>
-                        </div>
-                        <span class="quxiao" id="close" >
-                            x
-                        </span>
-                    </div>
-                    <div class="shuru1">
-                        <span>售价：</span>
-                        <input type="" name="cost" value="1.50">
-                    </div>
-                    <div class="shuru1">
-                        <span>数量：</span>
-                        <input type="" name="number" value="2">
-                    </div>
-                    <div class="butt">
-                        <a href="javascript:" class="save">保存</a>
-                        <a href="javascript:" class="push">下架</a>
-                    </div>
-                
-                </div>
-            </li>
-            <li>
-               <div style="float:left;width:80%;" class="dianji">
-                    <img data-original="static/images/one_6.jpg" class="xiaofei">
-                    <div class="new_show">
-                        <p class="shop_name">红牛1</p>
-                        <p style="padding-left: 0.18rem;">
-                            <span class="shop_money">￥<span>6.00</span></span>
-                            <span class="price_01">采购价</span>
-                            <span class="price_02">￥<span>3.00</span></span>
-                            <span class="price_01">售价</span>
-                            <span class="price_02">￥<span>2.00</span></span>
-                        </p>
-                        <p class="spec">422ml/听</p>
-                    </div>
-                </div>
-                <div class="push_right">
-                    <p class="num">98</p>
-                    <a href="javascript:" class="off">
-                        下架
-                    </a>
-                </div>
-                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
-                    <div class="liebiao">
-                        <img src="static/images/hong.jpg">
-                        <div class="shuzi">
-                            <p class="shop_name"></p>
-                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
-                                    <span class="shop_money">￥<span></span></span>
-                                    <span class="price_01">采购价</span>
-                                    <span class="ye">￥<span></span></span>
-                            </p>
-                            <p class="spec"></p>
-                        </div>
-                        <span class="quxiao" id="close" >
-                            x
-                        </span>
-                    </div>
-                    <div class="shuru1">
-                        <span>售价：</span>
-                        <input type="" name="cost" value="1.50">
-                    </div>
-                    <div class="shuru1">
-                        <span>数量：</span>
-                        <input type="" name="number" value="2">
-                    </div>
-                    <div class="butt">
-                        <a href="javascript:" class="save">保存</a>
-                        <a href="javascript:" class="push">下架</a>
-                    </div>
-                
-                </div>
-            </li>
-            <li>
-               <div style="float:left;width:80%;" class="dianji">
-                    <img data-original="static/images/one_7.jpg" class="xiaofei">
-                    <div class="new_show">
-                        <p class="shop_name">红牛1</p>
-                        <p style="padding-left: 0.18rem;">
-                            <span class="shop_money">￥<span>6.00</span></span>
-                            <span class="price_01">采购价</span>
-                            <span class="price_02">￥<span>3.00</span></span>
-                            <span class="price_01">售价</span>
-                            <span class="price_02">￥<span>2.00</span></span>
-                        </p>
-                        <p class="spec">422ml/听</p>
-                    </div>
-                </div>
-                <div class="push_right">
-                    <p class="num">98</p>
-                    <a href="javascript:" class="off">
-                        下架
-                    </a>
-                </div>
-                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
-                    <div class="liebiao">
-                        <img src="static/images/hong.jpg">
-                        <div class="shuzi">
-                            <p class="shop_name"></p>
-                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
-                                    <span class="shop_money">￥<span></span></span>
-                                    <span class="price_01">采购价</span>
-                                    <span class="ye">￥<span></span></span>
-                            </p>
-                            <p class="spec"></p>
-                        </div>
-                        <span class="quxiao" id="close" >
-                            x
-                        </span>
-                    </div>
-                    <div class="shuru1">
-                        <span>售价：</span>
-                        <input type="" name="cost" value="1.50">
-                    </div>
-                    <div class="shuru1">
-                        <span>数量：</span>
-                        <input type="" name="number" value="2">
-                    </div>
-                    <div class="butt">
-                        <a href="javascript:" class="save">保存</a>
-                        <a href="javascript:" class="push">下架</a>
-                    </div>
-                
-                </div>
-            </li>
-            <li>
-               <div style="float:left;width:80%;" class="dianji">
-                    <img data-original="static/images/one_8.jpg" class="xiaofei">
-                    <div class="new_show">
-                        <p class="shop_name">红牛1</p>
-                        <p style="padding-left: 0.18rem;">
-                            <span class="shop_money">￥<span>6.00</span></span>
-                            <span class="price_01">采购价</span>
-                            <span class="price_02">￥<span>3.00</span></span>
-                            <span class="price_01">售价</span>
-                            <span class="price_02">￥<span>2.00</span></span>
-                        </p>
-                        <p class="spec">422ml/听</p>
-                    </div>
-                </div>
-                <div class="push_right">
-                    <p class="num">98</p>
-                    <a href="javascript:" class="off">
-                        下架
-                    </a>
-                </div>
-                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
-                    <div class="liebiao">
-                        <img src="static/images/hong.jpg">
-                        <div class="shuzi">
-                            <p class="shop_name"></p>
-                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
-                                    <span class="shop_money">￥<span></span></span>
-                                    <span class="price_01">采购价</span>
-                                    <span class="ye">￥<span></span></span>
-                            </p>
-                            <p class="spec"></p>
-                        </div>
-                        <span class="quxiao" id="close" >
-                            x
-                        </span>
-                    </div>
-                    <div class="shuru1">
-                        <span>售价：</span>
-                        <input type="" name="cost" value="1.50">
-                    </div>
-                    <div class="shuru1">
-                        <span>数量：</span>
-                        <input type="" name="number" value="2">
-                    </div>
-                    <div class="butt">
-                        <a href="javascript:" class="save">保存</a>
-                        <a href="javascript:" class="push">下架</a>
-                    </div>
-                
-                </div>
-            </li>
-            <li>
-               <div style="float:left;width:80%;" class="dianji">
-                    <img data-original="static/images/one_9.jpg" class="xiaofei">
-                    <div class="new_show">
-                        <p class="shop_name">红牛1</p>
-                        <p style="padding-left: 0.18rem;">
-                            <span class="shop_money">￥<span>6.00</span></span>
-                            <span class="price_01">采购价</span>
-                            <span class="price_02">￥<span>3.00</span></span>
-                            <span class="price_01">售价</span>
-                            <span class="price_02">￥<span>2.00</span></span>
-                        </p>
-                        <p class="spec">422ml/听</p>
-                    </div>
-                </div>
-                <div class="push_right">
-                    <p class="num">98</p>
-                    <a href="javascript:" class="off">
-                        下架
-                    </a>
-                </div>
-                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
-                    <div class="liebiao">
-                        <img src="static/images/hong.jpg">
-                        <div class="shuzi">
-                            <p class="shop_name"></p>
-                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
-                                    <span class="shop_money">￥<span></span></span>
-                                    <span class="price_01">采购价</span>
-                                    <span class="ye">￥<span></span></span>
-                            </p>
-                            <p class="spec"></p>
-                        </div>
-                        <span class="quxiao" id="close" >
-                            x
-                        </span>
-                    </div>
-                    <div class="shuru1">
-                        <span>售价：</span>
-                        <input type="" name="cost" value="1.50">
-                    </div>
-                    <div class="shuru1">
-                        <span>数量：</span>
-                        <input type="" name="number" value="2">
-                    </div>
-                    <div class="butt">
-                        <a href="javascript:" class="save">保存</a>
-                        <a href="javascript:" class="push">下架</a>
-                    </div>
-                
-                </div>
-            </li>
-            <li>
-               <div style="float:left;width:80%;" class="dianji">
-                    <img data-original="static/images/hou.jpg" class="xiaofei">
-                    <div class="new_show">
-                        <p class="shop_name">红牛1</p>
-                        <p style="padding-left: 0.18rem;">
-                            <span class="shop_money">￥<span>6.00</span></span>
-                            <span class="price_01">采购价</span>
-                            <span class="price_02">￥<span>3.00</span></span>
-                            <span class="price_01">售价</span>
-                            <span class="price_02">￥<span>2.00</span></span>
-                        </p>
-                        <p class="spec">422ml/听</p>
-                    </div>
-                </div>
-                <div class="push_right">
-                    <p class="num">2</p>
-                    <a href="javascript:" class="off">
-                        下架
-                    </a>
-                </div>
-                <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
-                    <div class="liebiao">
-                        <img src="static/images/hong.jpg">
-                        <div class="shuzi">
-                            <p class="shop_name"></p>
-                            <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
-                                    <span class="shop_money">￥<span></span></span>
-                                    <span class="price_01">采购22价</span>
-                                    <span class="ye">￥<span></span></span>
-                            </p>
-                            <p class="spec"></p>
-                        </div>
-                        <span class="quxiao" id="close" >
-                            x
-                        </span>
-                    </div>
-                    <div class="shuru1">
-                        <span>售价：</span>
-                        <input type="" name="cost" value="1.50">
-                    </div>
-                    <div class="shuru1">
-                        <span>数量：</span>
-                        <input type="" name="number" value="2">
-                    </div>
-                    <div class="butt">
-                        <a href="javascript:" class="save">保存</a>
-                        <a href="javascript:" class="push">下架</a>
-                    </div>
-                
-                </div>
-            </li>   
-        </ul>
-        <p class="week_goods">周消费量统计截至2016-08-21</p> 
-        <div class="botom_push">
-            <span>已下架商品</span>
+<div class="push_content">
+<input id="shopId" type="hidden" value="1385">
+<ul>
+<div id="layer_items" layer-id="1">
+                    <li index="1" data-id = "9243">
+    <div style="float:left;width:77.52%;" class="dianji">
+        <img src="http://assets.lingwa.com.cn/images/item/1a6ff96a-c31f-4c93-adf3-58184c462e77.jpg" class="xiaofei">
+        <div class="new_show">
+            <p class="shop_name">乐事干杯脆</p>
+            <p style="padding-left: 0.1rem;">
+                <span class="shop_money">￥<span>2.00</span></span>
+                <span class="price_01">采购价</span>
+                <span class="price_02">￥<span>1.30</span></span>
+                </br>
+                <span class="price_01" style="margin-left: 0;">售价</span>
+                <span class="price_02">￥<span>1.00</span></span>
+            </p>
+            <p class="spec">
+                25g/包
+                                                    <span class="zhixiao" >周消费<span class="week_o">5</span></span>
+                                            </p>
         </div>
-        <div class="push_bg" id="push_bg" style="display:none"></div>  
     </div>
-    
-</body>
+
+    <div class="push_right">
+        <p class="num">7</p>
+        <a href="javascript:" class="off" id="1">
+            操作
+        </a>
+    </div>
+    <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+        <div class="liebiao" style="height: 2.1rem;">
+            <img src="http://assets.lingwa.com.cn/images/item/1a6ff96a-c31f-4c93-adf3-58184c462e77.jpg" style="padding:0;height: initial;">
+            <div class="shuzi">
+                <p class="shop_name"></p>
+                <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                    <span class="shop_money">￥<span>2.00</span></span>
+                    <span class="price_01">采购价</span>
+                    <span class="ye">￥<span>1.30</span></span>
+                </p>
+                <p class="spec"></p>
+            </div>
+            <span class="quxiao" id="close"  >
+            x
+        </span>
+        </div>
+        <div class="shuru1">
+            <span>售价：</span>
+            <input type="number" name="cost" value="1.00">
+        </div>
+        <div class="shuru1">
+            <span>数量：</span>
+            <input type="number" name="number" value="7">
+        </div>
+        <div class="butt" data-id="9243">
+            <a href="javascript:void(0);" class="save">保存</a>
+            <a href="javascript:void(0);" class="push">下架</a>
+        </div>
+
+    </div>
+
+</li>
+            <li index="1" data-id = "13317">
+    <div style="float:left;width:77.52%;" class="dianji">
+        <img src="http://assets.lingwa.com.cn/images/item/4b6b4372-87ea-48d6-a43d-8b7e90612ea3.jpg" class="xiaofei">
+        <div class="new_show">
+            <p class="shop_name">达利园熊字饼</p>
+            <p style="padding-left: 0.1rem;">
+                <span class="shop_money">￥<span>1.50</span></span>
+                <span class="price_01">采购价</span>
+                <span class="price_02">￥<span>1.20</span></span>
+                </br>
+                <span class="price_01" style="margin-left: 0;">售价</span>
+                <span class="price_02">￥<span>1.00</span></span>
+            </p>
+            <p class="spec">
+                51g/包
+                                                    <span class="zhixiao" >周消费<span class="week_o">5</span></span>
+                                            </p>
+        </div>
+    </div>
+
+    <div class="push_right">
+        <p class="num">8</p>
+        <a href="javascript:" class="off" id="1">
+            操作
+        </a>
+    </div>
+    <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+        <div class="liebiao" style="height: 2.1rem;">
+            <img src="http://assets.lingwa.com.cn/images/item/4b6b4372-87ea-48d6-a43d-8b7e90612ea3.jpg" style="padding:0;height: initial;">
+            <div class="shuzi">
+                <p class="shop_name"></p>
+                <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                    <span class="shop_money">￥<span>1.50</span></span>
+                    <span class="price_01">采购价</span>
+                    <span class="ye">￥<span>1.20</span></span>
+                </p>
+                <p class="spec"></p>
+            </div>
+            <span class="quxiao" id="close"  >
+            x
+        </span>
+        </div>
+        <div class="shuru1">
+            <span>售价：</span>
+            <input type="number" name="cost" value="1.00">
+        </div>
+        <div class="shuru1">
+            <span>数量：</span>
+            <input type="number" name="number" value="8">
+        </div>
+        <div class="butt" data-id="13317">
+            <a href="javascript:void(0);" class="save">保存</a>
+            <a href="javascript:void(0);" class="push">下架</a>
+        </div>
+
+    </div>
+
+</li>
+            <li index="1" data-id = "15912">
+    <div style="float:left;width:77.52%;" class="dianji">
+        <img src="http://assets.lingwa.com.cn/images/item/c07a7627-8162-4080-b34a-9aa04c7470bd.jpg" class="xiaofei">
+        <div class="new_show">
+            <p class="shop_name">旺旺小小酥</p>
+            <p style="padding-left: 0.1rem;">
+                <span class="shop_money">￥<span>2.00</span></span>
+                <span class="price_01">采购价</span>
+                <span class="price_02">￥<span>1.50</span></span>
+                </br>
+                <span class="price_01" style="margin-left: 0;">售价</span>
+                <span class="price_02">￥<span>1.20</span></span>
+            </p>
+            <p class="spec">
+                30g/袋
+                                                                                            <span class="zhixiao" >周消费<span class="week_o">0</span></span>
+                                                                                </p>
+        </div>
+    </div>
+
+    <div class="push_right">
+        <p class="num">10</p>
+        <a href="javascript:" class="off" id="1">
+            操作
+        </a>
+    </div>
+    <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+        <div class="liebiao" style="height: 2.1rem;">
+            <img src="http://assets.lingwa.com.cn/images/item/c07a7627-8162-4080-b34a-9aa04c7470bd.jpg" style="padding:0;height: initial;">
+            <div class="shuzi">
+                <p class="shop_name"></p>
+                <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                    <span class="shop_money">￥<span>2.00</span></span>
+                    <span class="price_01">采购价</span>
+                    <span class="ye">￥<span>1.50</span></span>
+                </p>
+                <p class="spec"></p>
+            </div>
+            <span class="quxiao" id="close"  >
+            x
+        </span>
+        </div>
+        <div class="shuru1">
+            <span>售价：</span>
+            <input type="number" name="cost" value="1.20">
+        </div>
+        <div class="shuru1">
+            <span>数量：</span>
+            <input type="number" name="number" value="10">
+        </div>
+        <div class="butt" data-id="15912">
+            <a href="javascript:void(0);" class="save">保存</a>
+            <a href="javascript:void(0);" class="push">下架</a>
+        </div>
+
+    </div>
+
+</li>
+            <li index="1" data-id = "17408">
+    <div style="float:left;width:77.52%;" class="dianji">
+        <img src="http://assets.lingwa.com.cn/images/item/9d341304-bed1-4e56-b6a7-97d30f419045.jpg" class="xiaofei">
+        <div class="new_show">
+            <p class="shop_name">丹夫华夫饼</p>
+            <p style="padding-left: 0.1rem;">
+                <span class="shop_money">￥<span>2.00</span></span>
+                <span class="price_01">采购价</span>
+                <span class="price_02">￥<span>1.60</span></span>
+                </br>
+                <span class="price_01" style="margin-left: 0;">售价</span>
+                <span class="price_02">￥<span>1.30</span></span>
+            </p>
+            <p class="spec">
+                30g/包
+                                                    <span class="zhixiao" >周消费<span class="week_o">15</span></span>
+                                            </p>
+        </div>
+    </div>
+
+    <div class="push_right">
+        <p class="num">23</p>
+        <a href="javascript:" class="off" id="1">
+            操作
+        </a>
+    </div>
+    <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+        <div class="liebiao" style="height: 2.1rem;">
+            <img src="http://assets.lingwa.com.cn/images/item/9d341304-bed1-4e56-b6a7-97d30f419045.jpg" style="padding:0;height: initial;">
+            <div class="shuzi">
+                <p class="shop_name"></p>
+                <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                    <span class="shop_money">￥<span>2.00</span></span>
+                    <span class="price_01">采购价</span>
+                    <span class="ye">￥<span>1.60</span></span>
+                </p>
+                <p class="spec"></p>
+            </div>
+            <span class="quxiao" id="close"  >
+            x
+        </span>
+        </div>
+        <div class="shuru1">
+            <span>售价：</span>
+            <input type="number" name="cost" value="1.30">
+        </div>
+        <div class="shuru1">
+            <span>数量：</span>
+            <input type="number" name="number" value="23">
+        </div>
+        <div class="butt" data-id="17408">
+            <a href="javascript:void(0);" class="save">保存</a>
+            <a href="javascript:void(0);" class="push">下架</a>
+        </div>
+
+    </div>
+
+</li>
+            <li index="1" data-id = "36308">
+    <div style="float:left;width:77.52%;" class="dianji">
+        <img src="http://assets.lingwa.com.cn/images/item/8d392846-87c3-43b4-8bbf-36951ec1ea18.jpg" class="xiaofei">
+        <div class="new_show">
+            <p class="shop_name">房锦记小麻花</p>
+            <p style="padding-left: 0.1rem;">
+                <span class="shop_money">￥<span>0.80</span></span>
+                <span class="price_01">采购价</span>
+                <span class="price_02">￥<span>0.30</span></span>
+                </br>
+                <span class="price_01" style="margin-left: 0;">售价</span>
+                <span class="price_02">￥<span>0.23</span></span>
+            </p>
+            <p class="spec">
+                5g/个
+                                                    <span class="zhixiao" >周消费<span class="week_o">25</span></span>
+                                            </p>
+        </div>
+    </div>
+
+    <div class="push_right">
+        <p class="num">28</p>
+        <a href="javascript:" class="off" id="1">
+            操作
+        </a>
+    </div>
+    <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+        <div class="liebiao" style="height: 2.1rem;">
+            <img src="http://assets.lingwa.com.cn/images/item/8d392846-87c3-43b4-8bbf-36951ec1ea18.jpg" style="padding:0;height: initial;">
+            <div class="shuzi">
+                <p class="shop_name"></p>
+                <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                    <span class="shop_money">￥<span>0.80</span></span>
+                    <span class="price_01">采购价</span>
+                    <span class="ye">￥<span>0.30</span></span>
+                </p>
+                <p class="spec"></p>
+            </div>
+            <span class="quxiao" id="close"  >
+            x
+        </span>
+        </div>
+        <div class="shuru1">
+            <span>售价：</span>
+            <input type="number" name="cost" value="0.23">
+        </div>
+        <div class="shuru1">
+            <span>数量：</span>
+            <input type="number" name="number" value="28">
+        </div>
+        <div class="butt" data-id="36308">
+            <a href="javascript:void(0);" class="save">保存</a>
+            <a href="javascript:void(0);" class="push">下架</a>
+        </div>
+
+    </div>
+
+</li>
+            <li index="1" data-id = "39033">
+    <div style="float:left;width:77.52%;" class="dianji">
+        <img src="http://assets.lingwa.com.cn/images/item/22182a3f-8694-43ea-9eef-e7369d2d7ae2.jpg" class="xiaofei">
+        <div class="new_show">
+            <p class="shop_name">洽洽喀吱脆</p>
+            <p style="padding-left: 0.1rem;">
+                <span class="shop_money">￥<span>2.00</span></span>
+                <span class="price_01">采购价</span>
+                <span class="price_02">￥<span>1.80</span></span>
+                </br>
+                <span class="price_01" style="margin-left: 0;">售价</span>
+                <span class="price_02">￥<span>1.40</span></span>
+            </p>
+            <p class="spec">
+                35g/袋
+                                                                                            <span class="zhixiao" >周消费<span class="week_o">0</span></span>
+                                                                                </p>
+        </div>
+    </div>
+
+    <div class="push_right">
+        <p class="num">12</p>
+        <a href="javascript:" class="off" id="1">
+            操作
+        </a>
+    </div>
+    <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+        <div class="liebiao" style="height: 2.1rem;">
+            <img src="http://assets.lingwa.com.cn/images/item/22182a3f-8694-43ea-9eef-e7369d2d7ae2.jpg" style="padding:0;height: initial;">
+            <div class="shuzi">
+                <p class="shop_name"></p>
+                <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                    <span class="shop_money">￥<span>2.00</span></span>
+                    <span class="price_01">采购价</span>
+                    <span class="ye">￥<span>1.80</span></span>
+                </p>
+                <p class="spec"></p>
+            </div>
+            <span class="quxiao" id="close"  >
+            x
+        </span>
+        </div>
+        <div class="shuru1">
+            <span>售价：</span>
+            <input type="number" name="cost" value="1.40">
+        </div>
+        <div class="shuru1">
+            <span>数量：</span>
+            <input type="number" name="number" value="12">
+        </div>
+        <div class="butt" data-id="39033">
+            <a href="javascript:void(0);" class="save">保存</a>
+            <a href="javascript:void(0);" class="push">下架</a>
+        </div>
+
+    </div>
+
+</li>
+            <li index="1" data-id = "45291">
+    <div style="float:left;width:77.52%;" class="dianji">
+        <img src="http://assets.lingwa.com.cn/images/item/f38a7e5d-daba-4d65-a530-030414b51f83.jpg" class="xiaofei">
+        <div class="new_show">
+            <p class="shop_name">泡吧拉明顿蛋糕</p>
+            <p style="padding-left: 0.1rem;">
+                <span class="shop_money">￥<span>2.50</span></span>
+                <span class="price_01">采购价</span>
+                <span class="price_02">￥<span>2.00</span></span>
+                </br>
+                <span class="price_01" style="margin-left: 0;">售价</span>
+                <span class="price_02">￥<span>1.60</span></span>
+            </p>
+            <p class="spec">
+                40g/个
+                                                    <span class="zhixiao" >周消费<span class="week_o">1</span></span>
+                                            </p>
+        </div>
+    </div>
+
+    <div class="push_right">
+        <p class="num">16</p>
+        <a href="javascript:" class="off" id="1">
+            操作
+        </a>
+    </div>
+    <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+        <div class="liebiao" style="height: 2.1rem;">
+            <img src="http://assets.lingwa.com.cn/images/item/f38a7e5d-daba-4d65-a530-030414b51f83.jpg" style="padding:0;height: initial;">
+            <div class="shuzi">
+                <p class="shop_name"></p>
+                <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                    <span class="shop_money">￥<span>2.50</span></span>
+                    <span class="price_01">采购价</span>
+                    <span class="ye">￥<span>2.00</span></span>
+                </p>
+                <p class="spec"></p>
+            </div>
+            <span class="quxiao" id="close"  >
+            x
+        </span>
+        </div>
+        <div class="shuru1">
+            <span>售价：</span>
+            <input type="number" name="cost" value="1.60">
+        </div>
+        <div class="shuru1">
+            <span>数量：</span>
+            <input type="number" name="number" value="16">
+        </div>
+        <div class="butt" data-id="45291">
+            <a href="javascript:void(0);" class="save">保存</a>
+            <a href="javascript:void(0);" class="push">下架</a>
+        </div>
+
+    </div>
+
+</li>
+            <li index="1" data-id = "67673">
+    <div style="float:left;width:77.52%;" class="dianji">
+        <img src="http://assets.lingwa.com.cn/images/item/023ade3f-dd25-40ec-b361-3742ed7c7daa.jpg" class="xiaofei">
+        <div class="new_show">
+            <p class="shop_name">点缀黄金唱片面包</p>
+            <p style="padding-left: 0.1rem;">
+                <span class="shop_money">￥<span>1.50</span></span>
+                <span class="price_01">采购价</span>
+                <span class="price_02">￥<span>1.30</span></span>
+                </br>
+                <span class="price_01" style="margin-left: 0;">售价</span>
+                <span class="price_02">￥<span>1.00</span></span>
+            </p>
+            <p class="spec">
+                40g/包
+                                                    <span class="zhixiao" >周消费<span class="week_o">13</span></span>
+                                            </p>
+        </div>
+    </div>
+
+    <div class="push_right">
+        <p class="num">22</p>
+        <a href="javascript:" class="off" id="1">
+            操作
+        </a>
+    </div>
+    <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+        <div class="liebiao" style="height: 2.1rem;">
+            <img src="http://assets.lingwa.com.cn/images/item/023ade3f-dd25-40ec-b361-3742ed7c7daa.jpg" style="padding:0;height: initial;">
+            <div class="shuzi">
+                <p class="shop_name"></p>
+                <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                    <span class="shop_money">￥<span>1.50</span></span>
+                    <span class="price_01">采购价</span>
+                    <span class="ye">￥<span>1.30</span></span>
+                </p>
+                <p class="spec"></p>
+            </div>
+            <span class="quxiao" id="close"  >
+            x
+        </span>
+        </div>
+        <div class="shuru1">
+            <span>售价：</span>
+            <input type="number" name="cost" value="1.00">
+        </div>
+        <div class="shuru1">
+            <span>数量：</span>
+            <input type="number" name="number" value="22">
+        </div>
+        <div class="butt" data-id="67673">
+            <a href="javascript:void(0);" class="save">保存</a>
+            <a href="javascript:void(0);" class="push">下架</a>
+        </div>
+
+    </div>
+
+</li>
+            <li index="1" data-id = "70597">
+    <div style="float:left;width:77.52%;" class="dianji">
+        <img src="http://assets.lingwa.com.cn/images/item/35f2a170-955e-43dc-8511-2ab46cb20761.png" class="xiaofei">
+        <div class="new_show">
+            <p class="shop_name">诺功咸香酥</p>
+            <p style="padding-left: 0.1rem;">
+                <span class="shop_money">￥<span>1.80</span></span>
+                <span class="price_01">采购价</span>
+                <span class="price_02">￥<span>1.50</span></span>
+                </br>
+                <span class="price_01" style="margin-left: 0;">售价</span>
+                <span class="price_02">￥<span>1.20</span></span>
+            </p>
+            <p class="spec">
+                45g/包
+                                                    <span class="zhixiao" >周消费<span class="week_o">3</span></span>
+                                            </p>
+        </div>
+    </div>
+
+    <div class="push_right">
+        <p class="num">2</p>
+        <a href="javascript:" class="off" id="1">
+            操作
+        </a>
+    </div>
+    <div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;">
+        <div class="liebiao" style="height: 2.1rem;">
+            <img src="http://assets.lingwa.com.cn/images/item/35f2a170-955e-43dc-8511-2ab46cb20761.png" style="padding:0;height: initial;">
+            <div class="shuzi">
+                <p class="shop_name"></p>
+                <p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;">
+                    <span class="shop_money">￥<span>1.80</span></span>
+                    <span class="price_01">采购价</span>
+                    <span class="ye">￥<span>1.50</span></span>
+                </p>
+                <p class="spec"></p>
+            </div>
+            <span class="quxiao" id="close"  >
+            x
+        </span>
+        </div>
+        <div class="shuru1">
+            <span>售价：</span>
+            <input type="number" name="cost" value="1.20">
+        </div>
+        <div class="shuru1">
+            <span>数量：</span>
+            <input type="number" name="number" value="2">
+        </div>
+        <div class="butt" data-id="70597">
+            <a href="javascript:void(0);" class="save">保存</a>
+            <a href="javascript:void(0);" class="push">下架</a>
+        </div>
+
+    </div>
+
+</li>
+
+</div>
+<div class="push_bottom1" id="push_bottom1">
+            <button class="push_ceng ps_s" index="1"  type="button" >调整至第一层</button>
+            <button class="push_ceng ps_s" index="2"  type="button" >调整至第二层</button>
+            <button class="push_ceng ps_s" index="3"  type="button" >调整至第三层</button>
+            <button class="push_ceng ps_s" index="52"  type="button" >调整至第四层</button>
+            <button class="push_ceng ps_s" index="53"  type="button" >调整至第五层</button>
+            <button class="push_ceng ps_s" index="61"  type="button" >调整至冰箱</button>
+        <div class="ps_xj">下架</div>
+<div class="ps_qx">取消</div>
+</div>
+
+<div class="zs_edit">
+<span class="zs_del del_sure">删除本层</span>
+<span class="zs_del ed_sure" >编辑本层</span>
+</div>
+</ul>
+<!-- <p class="week_goods">周消费量统计截至2016-08-21</p>  -->
+
+<div class="push_bg" id="push_bg" style="display:none"></div>
+</div>
+
+<!-- 添加层 -->
+<div class="ae_ceng">
+<div class="ae_content">
+<span>添加层</span>
+<img src="/static/images/shop/zs_close.png" id="zs_close">
+</div>
+<div class="ae_footer">
+<input type="" name="" placeholder="请输入层的名称（最多三个字）" id="ceng_val">
+<span class="ae_anniu ae_quxiao">取消</span>
+<span class="ae_anniu ae_sure">确定</span>
+</div>
+</div>
+<!-- 编辑层 -->
+<div class="botom_push" style="color: #FFE500" ontouchend="godown(1385)">
+<span>已下架商品</span>
+</div>
 <script type="text/javascript">
+document.title = "在售商品";
+var touchmove;
+$(document).on( "touchend", function() {
+touchmove = false;
+});
+$(document).on( "touchmove", function() {
+touchmove = true;
+});
+function formatMoney(num) {
+var money = num/100;
+var float = num%100;
+var float2 = num%10;
+if(float == 0){
+money = money + ".00";
+}else{
+if(float2 == 0) {
+money = money + "0";
+}
+}
+return money;
+}
 $(function() {
-      $("img.xiaofei").lazyload({effect: "fadeIn"});
+var n_he = $(".push_bottom1").height();
+console.log(n_he);
+$(".push_bottom1").css("bottom",-n_he);
 });
-
-$('.botom_push').on('touchend',function(){
-    if (touchmove) {
-        return;
-    }
-    alert(1);
-})
-    $(".push_content ul li:last-child").css("margin-bottom","1.1rem");
-    var touchmove;
-    $(document).on( "touchstart", function() {
-  touchmove = false;
-    });
-  $(document).on( "touchmove", function() {
-  touchmove = true;
-    });
-    $(".dianji").on("touchend",function(){
-        if (touchmove) {
-        return;
-    }
-    var a =this;
-    var name =$(a).find(".shop_name").text();
-    var shop_price =  $(a).find("p .shop_money span").text();
-    var img_src = $(a).parent().find("img").attr("src");
-    var caigou_price = $(a).find("p .price_02 span").eq(0).text();
-    var cost_price = $(a).find("p .price_02 span").eq(1).text();
-    var spec = $(a).find(".spec").text();
-    var su = $(a).parent();
-    var shuliang = $(su).find(".push_right .num").text();
-    $(a).siblings(".push_bottom").animate({bottom:"0"},200);
-    $(su).parent().siblings(".push_bg").css("display","block");
-    var sus_name = $(a).siblings(".push_bottom").children(".liebiao");
-    $(sus_name).find("img").attr("src",img_src);
-    $(sus_name).find(".shuzi .shop_name").text(name);
-    $(sus_name).find(".shuzi p .shop_money span").text(shop_price);
-    $(sus_name).find(".shuzi p .ye span").text(caigou_price);
-    $(sus_name).find(".shuzi .spec").text(spec);
-    var biaojia = $(a).siblings(".push_bottom").children(".shuru1");
-    $(biaojia).eq(0).find("input").val(cost_price);
-    $(biaojia).eq(1).find("input").val(shuliang);
-});
-    // close关闭悬浮层
-    $(".quxiao").on("touchend",function(){
-        if (touchmove) {
-            return;
-        }
-        $('input').blur();
-         $(this).parent().parent().animate({bottom:"-5.62rem"},200);
-         $(this).parent().parent().parent().parent().siblings(".push_bg").fadeOut();
-    });
-
-    //保存数据按钮
-    $(".save").on("touchend",function(){
-        if (touchmove) {
-            return;
-        }
-        $('input').blur();
-       var id = $(this).parent().attr("data-id");
-       var price_sale = $(this).parent().siblings(".shuru1").eq(0).find("input").val();
-       var num_stock = $(this).parent().siblings(".shuru1").eq(1).find("input").val();
-       var reg = /^(([1-9]+)|([0-9]+\.[0-9]{1,2}))$/;
-       var price = 0;
-       if(reg.test(price_sale)){
-            price = parseInt(price_sale*100);
-       }else{
-            alert("请输入正确的价格");
-            return false;
-       }    
-       var tt=/^\d+$/;
-       if (!tt.test(num_stock)) {
-            alert("请输入正确的数量");
-            return false;
-       }
-       $(this).parent().parent().siblings(".dianji").find(".new_show p .price_02 span").eq(1).text(price_sale);
-       $(this).parent().parent().siblings(".push_right").find(".num").text(num_stock);     
-       $(this).parent().parent().animate({bottom:"-5.62rem"},200);
-       $(this).parent().parent().parent().parent().siblings(".push_bg").fadeOut();    
-    });
-  
-    //上架
-    $(".off").on("touchend",function(){
-        if (touchmove) {
-        return;
-    }
-        if (confirm("确定下架吗？")){
-            var the = this;
-            $(this).parent().parent().fadeOut(500, function(){
-                    $(this).remove();
-                });
-        }
-    });
-    // function push(object){
-    //     var on = $(object).attr('id');
-    //     if (confirm("确定下架吗？")){
-    //          $(object).parent().parent().fadeOut(500, function(){
-    //                  $(object).remove();
-    //              });
-    //      }
-    // }
-    //悬浮层上架
-    $(".push").on("touchend",function(){
-        if (touchmove) {
-            return;
-        }
-
-        if (confirm("确定下架吗？")) {
-        var sdsd = this;
-        $(sdsd).parent().parent().parent().parent().siblings(".push_bg").fadeOut();
-        $(sdsd).parent().parent().animate({bottom:"-5.62rem"},200);
-        var nu = parseInt($(this).parent().siblings(".shuru1").eq(1).find("input").val());
-        var no = parseInt($(this).parent().parent().siblings(".push_right").find(".num").text());
-        var sup = no - nu;
-        $(this).parent().parent().siblings(".push_right").find(".num").text(sup);
-        if (sup == 0) {
-               $(this).parent().parent().parent().fadeOut(500, function(){
-                    $(this).remove();
-                });
-           
-            }
+$(".zaishou_left").on("touchend",function(e){
+var sf = e.target;
+if(touchmove){return}
+if (sf.nodeName == "LI" && sf.className == "a"){
+$(sf).addClass("active").siblings().removeClass("active");
+var now_index = $(sf).attr("index");
+var shopId = $('#shopId').val();
+$(".ps_s").removeAttr("disable");
+$(".ps_s").css("color","#000");
+$.ajax({
+url:'/convenient/shop_layerItem.json',
+type:'POST',
+data: {shop_id:shopId,layerId:now_index},
+success:function(data){
+    if(data.status==200){
+        if(data.data.length>0){
+            var content = '';
+            $.each(data.data,function(i){
+                var marketPrice = formatMoney(data.data[i].marketPrice);
+                var sourcingPrice = formatMoney(data.data[i].sourcingPrice);
+                var salePrice = formatMoney(data.data[i].salePrice);
+                content += '<li index="'+data.data[i].layerId+'" data-id = "'+data.data[i].id+'"><div style="float:left;width:77.52%;" class="dianji"><img src="'+data.data[i].imgPath+'" class="xiaofei"><div class="new_show"><p class="shop_name">'+data.data[i].name+'</p><p style="padding-left: 0.1rem;"><span class="shop_money">￥<span>'+marketPrice+'</span></span><span class="price_01">采购价</span><span class="price_02">￥<span>'+sourcingPrice+'</span></span></br><span class="price_01" style="margin-left: 0;">售价</span><span class="price_02">￥<span>'+salePrice+'</span></span></p><p class="spec">'+data.data[i].size;
+                var consumenum = data.data[i].consumeNum;
+                var flag = data.data[i].flag;
+                if(!consumenum){
+                    if (flag<7){
+                        content +='<span class="zhixiao" >周消费<span class="week_o">0</span></span>';
+                    }else{
+                        content +='<span class="week_red">滞销</span>';
+                    }
+                }else{
+                    content +=' <span class="zhixiao" >周消费<span class="week_o">'+consumenum+'</span></span>'
+                }
+                content +='</p></div></div><div class="push_right"><p class="num">'+data.data[i].num+'</p><a href="javascript:" class="off" id="1">操作</a></div><div class="push_bottom" id="push_bottom" style="bottom:-5.62rem;"><div class="liebiao" style="height: 2.1rem;"><img src="'+data.data[i].imgPath+'" style="padding:0;height: initial;"><div class="shuzi"><p class="shop_name"></p><p style="padding-left: 0.18rem;font-size:0.24rem;padding-top:0.1rem;"><span class="shop_money">￥<span>'+marketPrice+'</span></span><span class="price_01">采购价</span><span class="ye">￥<span>'+sourcingPrice+'</span></span></p><p class="spec"></p></div><span class="quxiao" id="close"  >x</span></div><div class="shuru1"><span>售价：</span><input type="number" name="cost" value="'+salePrice+'"></div><div class="shuru1"><span>数量：</span><input type="number" name="number" value="'+data.data[i].num+'"></div><div class="butt" data-id="'+data.data[i].id+'"><a href="javascript:void(0);" class="save">保存</a><a href="javascript:void(0);" class="push">下架</a></div></div>'
+            });
+            $('#layer_items').html(content);
         }else{
-
+            var no_content = '<div class="no_result"><img src="/static/images/shop/no_result.png"><span>本层暂未添加商品</span></div>'
+            $('#layer_items').html(no_content);
+            $(".no_result").show();
         }
-        
-         
-    });
+    }else{
+        alert("失败");
+    }
+    $('#layer_items').attr("layer-id",now_index);
+}
+})
+
+}
+
+})
+
+
+$(document).on("touchend",".dianji",function(){
+if (touchmove) {
+return;
+}
+
+var a = this;
+var name =$(a).find(".shop_name").text();
+var shop_price =  $(a).find("p .shop_money span").text();
+var img_src = $(a).parent().find("img").attr("src");
+var caigou_price = $(a).find("p .price_02 span").eq(0).text();
+var cost_price = $(a).find("p .price_02 span").eq(1).text();
+var spec = $(a).find(".spec").text();
+var su = $(a).parent();
+var shuliang = $(su).find(".push_right .num").text();
+$(a).siblings(".push_bottom").animate({bottom:"0"},200);
+$(su).parent().parent().siblings(".push_bg").css("display","block");
+var sus_name = $(a).siblings(".push_bottom").children(".liebiao");
+$(sus_name).find("img").attr("src",img_src);
+$(sus_name).find(".shuzi .shop_name").text(name);
+$(sus_name).find(".shuzi p .shop_money span").text(shop_price);
+$(sus_name).find(".shuzi p .ye span").text(caigou_price);
+$(sus_name).find(".shuzi .spec").text(spec);
+var biaojia = $(a).siblings(".push_bottom").children(".shuru1");
+$(biaojia).eq(0).find("input").val(cost_price);
+$(biaojia).eq(1).find("input").val(shuliang);
+});
+
+function accMul(num1,num2){
+var m=0,s1=num1.toString(),s2=num2.toString();
+try{m+=s1.split(".")[1].length}catch(e){};
+try{m+=s2.split(".")[1].length}catch(e){};
+return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m);
+}
+
+// close关闭悬浮层
+$(document).on("touchend",".quxiao",function(){
+if (touchmove) {
+return;
+}
+
+$('input').blur();
+$(this).parent().parent().animate({bottom:"-5.62rem"},200);
+$(this).parent().parent().parent().parent().parent().siblings(".push_bg").css("display","none");
+});
+$(".push_bg").on("touchmove",function(){
+    return;
+})
+
+//保存数据按钮
+$(document).on("touchend",".save",function(){
+if (touchmove) {
+return;
+}
+$('input').blur();
+var sss =this;
+var item_id = $(this).parent().attr("data-id");
+var price_sale = $(this).parent().siblings(".shuru1").eq(0).find("input").val();
+var num_stock = $(this).parent().siblings(".shuru1").eq(1).find("input").val();
+var reg = /^(([1-9]+)|([0-9]+\.[0-9]{1,2}))$/;
+var price = 0;
+if(reg.test(price_sale)){
+price = accMul(price_sale,100);
+}else{
+alert("请输入正确的价格");
+return false;
+}
+var tt=/^\d+$/;
+if (!tt.test(num_stock)) {
+alert("请输入正确的数量");
+return false;
+}
+$.ajax({
+url:'/convenient/shop_itemUpdate.do',
+type:'POST',
+data: {item_id:item_id,price:price,num:num_stock},
+success:function(data){
+if(data.status==200){
+    $(sss).parent().parent().siblings(".dianji").find(".new_show p .price_02 span").eq(1).text(price_sale);
+    $(sss).parent().parent().siblings(".push_right").find(".num").text(num_stock);
+    $(sss).parent().parent().animate({bottom:"-5.62rem"},200);
+    $(sss).parent().parent().parent().parent().parent().siblings(".push_bg").fadeOut();
+}else if(data.status==201){
+    alert("你不是管理员！");
+}else{
+    alert("网络异常，请稍后重试！");
+}
+}
+
+})
+
+});
+
+//悬浮层上架
+$(document).on("touchend",".push",function(){
+if (touchmove) {
+return;
+}
+if (confirm("确定下架吗？")) {
+var sdsd = this;
+var item_id = $(sdsd).parent().attr("data-id");
+var price_sale = $(this).parent().siblings(".shuru1").eq(0).find("input").val();
+var num_stock = $(this).parent().siblings(".shuru1").eq(1).find("input").val();
+var reg = /^(([1-9]+)|([0-9]+\.[0-9]{1,2}))$/;
+var price = 0;
+if(reg.test(price_sale)){
+price = accMul(price_sale,100);
+}else{
+alert("请输入正确的价格");
+return false;
+}
+var tt=/^\d+$/;
+if (!tt.test(num_stock)) {
+alert("请输入正确的数量");
+return false;
+}
+
+$.ajax({
+url:'/convenient/shop_itemUpdate.do',
+type:'POST',
+data: {item_id:item_id,price:price,num:num_stock,isdown:0},
+success:function(data){
+    if(data.status==200){
+        $(sdsd).parent().parent().parent().parent().parent().siblings(".push_bg").fadeOut();
+        $(sdsd).parent().parent().animate({bottom:"-5.62rem"},200);
+        $(sdsd).parent().parent().parent().fadeOut(500, function(){
+            $(sdsd).remove();19
+        });
+    }else if(data.status==201){
+        alert("你不是管理员！");
+    }else{
+        alert("网络异常，请稍后重试！");
+    }
+}
+
+})
+
+
+
+
+}
+
+
+});
+
+// 添加层浮出
+$(".zs_add").on("touchend",function(){
+$(".ae_content").find("span").text("添加层");
+$(".ae_footer").find("input").attr("placeholder","请输入层的名称（最多三个字）");
+$('.ae_ceng').animate({bottom:"0"},200);
+$('.push_bg').fadeIn();
+$('.ae_footer').removeAttr("layer-id");
+})
+//编辑层浮出
+$(".ed_sure").on("touchend",function() {
+$(".ae_content").find("span").text("编辑层");
+$(".ae_footer").find("input").attr("placeholder","请重新输入层的名称（最多三个字）");
+$('.ae_ceng').animate({bottom:"0"},200);
+var layerId=$(this).parent().parent().find("div").attr("layer-id");
+$(".ae_footer").attr("layer-id",layerId);
+$('.push_bg').fadeIn();
+})
+// 添加层关闭
+$("#zs_close").on("touchend",function(){
+$('.ae_ceng').animate({bottom:"-4.08rem"},200);
+$('.push_bg').fadeOut();
+$(this).parent().siblings(".ae_footer").removeAttr("layer-id");
+})
+
+// 添加层取消
+$(".ae_quxiao").on("touchend",function(){
+$('.ae_ceng').animate({bottom:"-4.08rem"},200);
+$('.push_bg').fadeOut();
+$("#ceng_val").val('');
+$(this).parent().removeAttr("layer-id");
+})
+
+// 添加层确定
+$(".ae_sure").on("touchend",function(){
+    if(touchmove){return}
+document.activeElement.blur();
+var al = $("#ceng_val").val();
+var layerId=$(this).parent().attr("layer-id");
+
+var shopId = $('#shopId').val();
+if (al.length == 0) {
+alert("至少输入一个字");
+return;
+}
+if (al.length>3) {
+alert("不得超过三个字");
+return;
+}
+
+$.ajax({
+url:'/convenient/shop_saveLayer.do',
+type:'POST',
+data: {shopId:shopId,id:layerId,name:al},
+success:function(data){
+if(data.status==200){
+    if(data.data){
+        var a_size = data.data.id;
+        var name = data.data.name;
+        $('<li class="a" index='+a_size+'>'+name+'</li>').insertBefore($(".zs_add"));
+        $('<button class="push_ceng ps_s" index='+a_size+' type="button">'+name+'</button>').insertBefore($(".ps_xj"));
+        $('.ae_ceng').animate({bottom:"-4.08rem"},200);
+        $('.push_bg').fadeOut();
+    }else{
+        $("li.active").text(al);
+        $('.ae_ceng').animate({bottom:"-4.08rem"},200);
+        $('.push_bg').fadeOut();
+    }
+}else{
+    alert("失败");
+}
+$("#ceng_val").val('');
+}
+})
+
+})
+
+// 删除本层
+$(".del_sure").on("touchend",function(){
+if(touchmove){
+return;
+}
+if(confirm("确定删除本层吗？")){
+var layerId=$(this).parent().parent().find("div").attr("layer-id");
+var shopId = $('#shopId').val();
+var yes_no = $(".push_content ul li:not(:hidden)").length;
+if (yes_no >0) {
+alert("请先将本层的商品调整至其它层");
+return;
+}else{
+//console.log($('li.active').attr("index"));
+$.ajax({
+    url:'/convenient/shop_deleteLayer.do',
+    type:'POST',
+    data: {shopId:shopId,layerId:layerId},
+    success:function(data){
+        if(data==200){
+            window.location.reload();
+        }else{
+            alert("设置层级出错");
+        }
+    }
+})
+
+}
+}
+
+$(".L").css("color","#C7C7C7");
+})
+
+// 操作
+$(".push_content").on("touchend",function(e){
+var dod = e.target;
+if(touchmove){return}
+// 操作
+if (dod.nodeName == "A" && dod.className == "off"){
+console.log();
+var ddd = $(dod).parent().parent().parent().siblings(".push_bottom1");
+var itemid = $(dod).parent().parent().attr("data-id");
+$('.push_bottom1').attr("item-id",itemid);
+$('.push_bg').fadeIn();
+$(ddd).animate({bottom:0},200);
+ddd.show();
+var noww_index = $(dod).parent().parent().attr("index");
+var pu_index = $(ddd).find(".ps_s");
+$(".zaishou_left li").each(function(){
+var index2 = $(this).attr("index");
+var jo = $(this).text();
+for (var i = 0; i < pu_index.length; i++) {
+    if ($(pu_index[i]).attr('index') == noww_index) {
+        $(pu_index[i]).attr('disable','disable');
+        $(pu_index[i]).css("color","#C7C7C7");
+    }
+    if ($(pu_index[i]).attr('index') == index2) {
+        $(pu_index[i]).text("调整至"+jo);
+    }
+}
+})
+
+}
+// 调节层数
+if (dod.nodeName == "BUTTON") {
+if ($(dod).attr("disable") == "disable") {
+return;
+}
+
+var layerId = $(dod).attr("index");
+var itemId = $(dod).parent().attr("item-id");
+var shopId = $('#shopId').val();
+$.ajax({
+url:'/convenient/shop_setLayer.do',
+type:'POST',
+data: {shopId:shopId,itemId:itemId,layerId:layerId},
+success:function(data){
+    if(data==200){
+        $("#layer_items li").each(function(){
+            var idi = $(this).attr("data-id");
+            if(idi == itemId){
+                $(this).remove();
+            }
+        });
+        $('.push_bottom1').hide();
+        $('.push_bg').fadeOut();
+    }else{
+        alert("设置层级出错");
+    }
+}
+})
+
+}
+// 调节层数 取消
+if (dod.className == "ps_qx") {
+var koko = $(".push_bottom").height();
+$('.push_bottom1').animate({bottom:-koko},200);
+$('.push_bottom1').hide();
+$('.push_bg').fadeOut();
+}
+//下架
+if (dod.className == "ps_xj") {
+var itemId = $(dod).parent().attr("item-id");
+if (confirm("确定下架吗？")) {
+var the = this;
+var id = $(the).attr("id");
+$.ajax({
+    url: '/convenient/shop_shelf.do',
+    type: 'POST',
+    data: {item_id: itemId, isdown: 0},
+    success: function (data) {
+        if (data == 200) {
+            $("#layer_items li").each(function () {
+                var idi = $(this).attr("data-id");
+                if (idi == itemId) {
+                    $(this).remove();
+                    $('.push_bottom1').hide();
+                    $('.push_bg').fadeOut();
+                }
+            });
+        } else if (data == 201) {
+            alert("你不是管理员！");
+        } else {
+            alert("网络异常，请稍后重试！");
+        }
+    }
+
+})
+}
+}
+})
+
+function godown(id){
+if (touchmove) {
+return;
+}
+window.location.href="/convenient/shop_saleItem.htm?shop_id="+id+"&isdown=0";
+}
 </script>
 </html>

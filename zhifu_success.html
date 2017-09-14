@@ -23,24 +23,41 @@
 <body>
    <div class="zhifu_content">
    <a href="" style="display: block;">
-     <p class="zhifu_top">
+     <p class="zhifu_top" style="">
        <img src="static/images/qq.jpg">
        <span>袁小肥</span>
      </p>
    </a>
+   <!-- <a href="https://mp.weixin.qq.com/bizmall/mallshelf?t=mall/list&biz=MzIwMDQ0NzQ3Mg==&shelf_id=2&showwxpaytitle=1&scene=1&uin=Mjg1NDU2Nzg2MA%3D%3D&key=ff07e0c0cfbe3bd1d0f90d067439653336b2a5c2a9d5a9be0a9cc3be3281f92be9e29191c57a57441ae17e51bb6880b3cde808556c83f476454630df7bac9edcb7061a3b4d71e11055e636a75825a201&version=12020710&lang=zh_CN&nettype=WIFI&fontScale=100&pass_ticket=j2Rwun6KDAdU97DA0lCFHr3I5AJhpEoJgcPJxkS1NdGXWe54RQ5G%2BhvOn0wE4fZK" style="display:block;">
+     <img src="static/images/yuebing.png" alt="" style="width:100%;height:1.8rem;">
+   </a> -->
      <!-- 购物车没有商品 未支付 -->
      <!-- <div class="no_pay">
        购物车内无商品，请完成支付
      </div> -->
      <!-- 购物车有商品 -->
      <div class="yes_pay">
-       <p>
+
+      <!-- 如果有红包 -->  
+        <p>
          <span>消费金额</span>
-         <!-- 如果有限时补贴 -->
-         <span style="float:right;color:green;margin-right:-.25rem;">（限时补贴￥2.90）</span>
+         
+         <!-- 红包 -->
+         <!-- <span style="float:right;color:red;margin-right:-.25rem;">（红包￥2.90）</span>  -->
          <span class="fr">￥3.80</span>
        </p>
        <i></i>
+
+       <!-- 如果有限时补贴和红包 -->
+       <!-- <p style="position: relative;padding-bottom: .8rem;">
+         <span>消费金额</span>
+         <span style="float:right;color:green;margin-right:-.25rem;">（限时补贴￥2.90）</span>
+         <span class="fr">￥3.80</span>
+         <span style="color:red;position: absolute;right: -.25rem;top:.9rem">（红包￥2.90）</span> 
+       </p>
+       <i style="top: 1.5rem;"></i> -->
+
+
        <p style="border: 0;padding: 0;font-size:.24rem;">
          <span class="food">
             <span>耶米熊雪花干吃汤圆</span>
@@ -53,12 +70,63 @@
             <span class="zhifu_right">X1</span>
          </span>
        </p>
+       <div class="credit">
+         <img src="static/images/credit.png" alt="">
+        本次自助支付行为已纳入芝麻信用足迹
+       </div>
      </div>
      <a href="" class="over">完成</a>
+     <div class="Layer1" style="display:none;"></div>
+     <!-- <div class="hb_jie">
+       <img src="static/images/hongbao.png" class="hongbao">
+       <p class="hb_huo">活动规则 <img src="static/images/jinru.png"></p>
+     </div> -->
+     <!-- 活动规则 -->
+     <!-- <div class="hd_rule">
+       <p class="rule_tip">活动规则</p>
+       <p class="rule">1. 红包可以全额抵扣所购商品；</p>
+       <p class="rule">2. 红包可以累计使用，无使用期限；</p>
+       <p class="rule">3. 红包不可转赠，不可提现；</p>
+       <p class="rule">4. 红包由领蛙发放，在领蛙便利店内使用；</p>
+       <img src="static/images/rule_qx.png" class="rule_qx">
+     </div> -->
    </div>
 </body>
 </html>
 <script type="text/javascript">
     document.title = "支付成功！";
-    $("body").css("background-color","#ececec");
+    $("body").css("background-color","#f5f5f5");
+    $(document).on( "touchstart", function() {
+      touchmove = false;
+    });
+    $(document).on( "touchmove", function() {
+      touchmove = true;
+    });
+    $(".hongbao").on("touchend",function(){
+      if(touchmove){return}
+      $(this).addClass("shake");
+      setTimeout(function(){
+        var money="0.88";
+        $(".hongbao").removeClass("shake");
+        $(".hongbao").attr("src","static/images/chai.png");
+        $(".hongbao").attr("class","chai")
+        var html='';
+        html+='<p class="hb_money">￥<span>'+money+'</span></p>';
+        $('.hb_jie').append(html);
+    },2000);
+    });
+    $(".hb_huo").on("touchend",function(){
+      $('.Layer1').show();
+      var documentWidth = $(document).width();
+      var rule_width = $(".hd_rule").width();
+      var wi = parseInt(documentWidth -rule_width)/2;
+      $(".hd_rule").css({
+        "left":wi
+      })
+      $(".hd_rule").show();
+    });
+    $(".rule_qx").on("touchend",function(){
+      $('.Layer1').fadeOut();
+      $(".hd_rule").hide();
+    })
 </script>

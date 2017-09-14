@@ -20,7 +20,43 @@
     <script type="text/javascript" src="./static/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="./static/js/rem.js"></script>
 </head>
+<style type="text/css">
+    .choice_addr{height: 1rem;margin-bottom: .2rem;width: 100%;line-height: 1rem;background-color: #fff; font-size: .32rem;}
+    .sss{color: #333;display: block;}
+    .sss span{vertical-align: middle;margin-left: .1rem}
+    .choice_addr img{width: .5rem;margin-left: .2rem;}
+    .addr_show1{height: 1.6rem;font-size: .28rem;margin-bottom: .2rem;width: 100%;background-color: #fff;position: relative;padding-bottom: .1rem}
+    .addr_show1 a{color: #333;float: left;width: 100%;}
+    .addr_show1 img{width: .3rem;height: .4rem;position: absolute;right: .2rem;top: .65rem;}
+    .mui{padding: .4rem 0 0 .2rem}
+    .adress{padding-left:.2rem}
+    #address{width: 70%;float: left;}
+    .user_name{padding-left: .2rem}
+</style>
 <body style="background-color:#f7f7f7;">
+<div class="confirm_wrap" style="background:#fafafa;">
+            <!-- <div class="choice_addr" id="choice_addr">
+                <div class="add_addr" id="add_addr" style="display:block;">
+                    <a href=" " class="sss">
+                        <img src="./static/images/zs_add.png">
+                            <span>新增收货地址</span>
+                    </a >
+                </div>
+            </div> -->
+            <div class="addr_show1" id="addr_show" style="width:100%;" style="display:block;">
+                <a href="javascript:;" >
+                        <p class="mui">
+                        <span>收货人：</span>
+                        <span class="user_name" id="user_name">沈辉</span>
+                        <span class="mobile" id="mobile">15757383827</span>
+                        </p>
+                        <p class = "adress"><span style="float: left;">收货地址：</span><span id="address">省杭州余杭市余杭杭区荆长路40号领蛙科</span></p>
+                        
+                        <img src="./static/images/pur_r.png" >
+                        
+                </a>
+            </div>            
+</div>
     <div class="caigou_sure">
         
         <ul>
